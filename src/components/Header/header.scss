@@ -1,0 +1,124 @@
+.header {
+
+    // .header__container
+
+    &__container {
+        background: #6867AB;
+        display: flex;
+        justify-content: center;
+        font-family: Montserrat;
+        padding: 0px 10px 0px 10px;
+    }
+
+    // .header__nav
+
+    &__menu {
+        width: 1190px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .header__menu-wrap
+
+    &__menu-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    // .header__logo
+
+    &__logo {
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    // .header__ul
+
+    &__ul {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 41px;
+        color: #fff;
+
+    }
+
+    // .header__span
+
+    &__tab {
+        display: none;
+
+        span {
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+        }
+
+    }
+
+    // .header__li
+
+    &__li {
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #F1DB49
+        }
+    }
+
+    // .header__button
+    &__button-wrap {
+        margin-left: 48px;
+    }
+
+    &__button {
+        width: 153px;
+        height: 33px;
+        border-radius: 8px;
+        background: #4DE5FF;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    @media(max-width:1210px) {
+        &__menu {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:1000px) {
+        &__menu {
+            width: 100%;
+        }
+
+        &__menu-wrap {
+            width: 150px;
+        }
+
+        &__tab {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &__ul {
+            display: none;
+        }
+
+        &__button-wrap {
+            margin: 0;
+        }
+    }
+}
