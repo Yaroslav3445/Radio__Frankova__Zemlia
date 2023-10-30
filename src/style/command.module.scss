@@ -1,0 +1,96 @@
+
+.command {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: Montserrat;
+
+    &__present {
+        width: fit-content;
+        position: relative;
+
+
+        h1 {
+            font-size: 58px;
+            font-weight: 700;
+        }
+    }
+
+    &__yellowLine {
+        position: absolute;
+        top: 20%;
+        right: -6.6%;
+    }
+
+    &__peson-wrap {
+        width: fit-content;
+        position: relative;
+    }
+
+    &__person {}
+
+
+    &__portret {}
+
+
+    &__info {}
+}
+
+.command {
+    position: relative;
+
+
+    &__present {}
+
+
+    &__yellowLine {}
+
+
+    &__helix {
+        top: -15.2%;
+        left: -9.2%;
+        position: absolute;
+        width: 141px;
+        height: 141px;
+        z-index: 1;
+    }
+
+
+    &__person {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    &__portret {
+        position: relative;
+    }
+
+
+    &__info {
+        width: 90%;
+        padding: 14px;
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        background-color: #F1DB49;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__thorus {
+        position: absolute;
+        right: -10%;
+        bottom: -50%;
+    }
+}

@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from './components/Header/Header'
-import MainPage from './components/Main-page/MainPage'
-import Footer from './components/Footer/Footer'
+import Header from './components/Header'
+import MainPage from './components/MainPage'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <>
       <Header />
-      <MainPage />
+      <main>
+        <MainPage />
+      </main>
       <Footer />
     </>
   )

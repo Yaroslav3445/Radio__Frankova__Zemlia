@@ -1,0 +1,64 @@
+.partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-family: Montserrat;
+
+        h1 {
+            font-size: 58px;
+            font-weight: 700;
+        }
+
+        img {
+            position: absolute;
+            bottom: 17%;
+            left: -10%;
+        }
+    }
+
+
+    &__wrapper {
+        max-width: 1030px;
+        position: relative;
+    }
+
+}
+
+:global {
+    .swiper {
+        height: 295px;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        top: 90%;
+        width: 36px;
+        background-repeat: no-repeat;
+        overflow: visible;
+        z-index: 110;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        background-image: url('../image/arrow-next.svg');
+        right: 43%;
+    }
+
+    .swiper-button-prev {
+        background-image: url('../image/arrow-prew.svg');
+        left: 43%;
+    }
+}
