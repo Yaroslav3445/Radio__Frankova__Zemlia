@@ -4,6 +4,8 @@ import Schedule from './Schedule';
 import Podcast from './Podcast';
 import Command from './Command';
 import Partner from './Partner';
+import Header from './Header';
+import Footer from './Footer';
 
 
 

@@ -1,11 +1,16 @@
-
 .podcast {
-    max-width: 1311px;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Montserrat;
-    position: relative;
+    justify-content: center;
+
+    &__wrapper {
+        max-width: 1311px;
+        font-family: Montserrat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
 
     &__main {
         width: fit-content;

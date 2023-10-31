@@ -1,10 +1,12 @@
 
+
 .command {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     font-family: Montserrat;
+    position: relative;
+
 
     &__present {
         width: fit-content;
@@ -27,25 +29,6 @@
         width: fit-content;
         position: relative;
     }
-
-    &__person {}
-
-
-    &__portret {}
-
-
-    &__info {}
-}
-
-.command {
-    position: relative;
-
-
-    &__present {}
-
-
-    &__yellowLine {}
-
 
     &__helix {
         top: -15.2%;

@@ -1,0 +1,51 @@
+.about {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__main {
+        width: fit-content;
+        position: relative;
+
+        h1 {
+            width: fit-content;
+            font-size: 58px;
+            font-weight: 700;
+        }
+
+    }
+
+    &__blueLine {
+        position: absolute;
+        top: 10%;
+        left: -22%;
+    }
+
+    &__wrapper {
+        width: 1169px;
+    }
+
+    &__bild {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      
+    }
+    &__info{
+        p{
+            max-width: 530px;
+        }
+    }
+
+    &__image {
+        width: 352px;
+        height: 401px;
+        border-radius: 0px 0px 150px 0px;
+        border: 1px solid #F1DB49;
+        img{
+            border-radius: 0px 0px 150px 0px;
+        }
+    }
+
+}

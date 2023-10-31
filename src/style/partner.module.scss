@@ -1,7 +1,13 @@
+:root {
+    --swiper-pagination-bullet-horizontal-gap: 7px;
+    --swiper-pagination-bottom: 7%
+}
+
 .partner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Montserrat;
 
     &__main {
         display: flex;
@@ -25,6 +31,13 @@
     &__wrapper {
         max-width: 1030px;
         position: relative;
+    }
+
+    &__pyramid {
+        position: absolute;
+        left: -15%;
+        bottom: -87%;
+        z-index: 3;
     }
 
 }
@@ -54,11 +67,27 @@
 
     .swiper-button-next {
         background-image: url('../image/arrow-next.svg');
-        right: 43%;
+        right: 42%;
     }
 
     .swiper-button-prev {
         background-image: url('../image/arrow-prew.svg');
-        left: 43%;
+        left: 42%;
+    }
+
+    .swiper-pagination {
+        bottom: var(--swiper-pagination-button);
+    }
+
+    .swiper-pagination-bullet {
+        margin: var(--swiper-pagination-bullet-horizontal-gap);
+        background-color: transparent;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+        font-size: 24px;
+        font-weight: 700;
     }
 }

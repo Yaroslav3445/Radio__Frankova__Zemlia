@@ -17,31 +17,33 @@ const Podcast = () => {
         <>
             <section>
                 <div className={podcastStyles.podcast}>
-                    <img className={podcastStyles['podcast__knot']} src={knot} alt="Knot" />
-                    <div className={podcastStyles['podcast__main']}>
-                        <h1>Підкасти</h1>
-                        <img className={podcastStyles['podcast__blueLine']} src={blueLine} alt="Blue Line" />
+                    <div className={podcastStyles.podcast__wrapper}>
+                        <img className={podcastStyles['podcast__knot']} src={knot} alt="Knot" />
+                        <div className={podcastStyles['podcast__main']}>
+                            <h1>Підкасти</h1>
+                            <img className={podcastStyles['podcast__blueLine']} src={blueLine} alt="Blue Line" />
+                        </div>
+                        <ul className={`${podcastStyles['podcast__list-column-1']} ${podcastStyles['podcast__list']}`}>
+                            <li className={`${podcastStyles['podcast__play-1']} ${podcastStyles['podcast__play']}`}>
+                                <img src={podcastFoto1} alt="Podcast 1" />
+                            </li>
+                            <li className={`${podcastStyles['podcast__play-1']} ${podcastStyles['podcast__play']}`}>
+                                <img src={podcastFoto2} alt="Podcast 2" />
+                            </li>
+                            <li className={`${podcastStyles['podcast__play-1']} ${podcastStyles['podcast__play']}`}>
+                                <img src={podcastFoto3} alt="Podcast 3" />
+                            </li>
+                        </ul>
+                        <ul className={`${podcastStyles['podcast__list-column-2']} ${podcastStyles['podcast__list']}`}>
+                            <li className={`${podcastStyles['podcast__play-2']} ${podcastStyles['podcast__play']}`}>
+                                <img src={podcastFoto4} alt="Podcast 4" />
+                            </li>
+                            <li className={`${podcastStyles['podcast__play-2']} ${podcastStyles['podcast__play']}`}>
+                                <img src={podcastFoto5} alt="Podcast 5" />
+                            </li>
+                        </ul>
+                        <img className={podcastStyles['podcast__cube']} src={cube} alt="Cube" />
                     </div>
-                    <ul className={`${podcastStyles['podcast__list-column-1']} ${podcastStyles['podcast__list']}`}>
-                        <li className={`${podcastStyles['podcast__play-1']} ${podcastStyles['podcast__play']}`}>
-                            <img src={podcastFoto1} alt="Podcast 1" />
-                        </li>
-                        <li className={`${podcastStyles['podcast__play-1']} ${podcastStyles['podcast__play']}`}>
-                            <img src={podcastFoto2} alt="Podcast 2" />
-                        </li>
-                        <li className={`${podcastStyles['podcast__play-1']} ${podcastStyles['podcast__play']}`}>
-                            <img src={podcastFoto3} alt="Podcast 3" />
-                        </li>
-                    </ul>
-                    <ul className={`${podcastStyles['podcast__list-column-2']} ${podcastStyles['podcast__list']}`}>
-                        <li className={`${podcastStyles['podcast__play-2']} ${podcastStyles['podcast__play']}`}>
-                            <img src={podcastFoto4} alt="Podcast 4" />
-                        </li>
-                        <li className={`${podcastStyles['podcast__play-2']} ${podcastStyles['podcast__play']}`}>
-                            <img src={podcastFoto5} alt="Podcast 5" />
-                        </li>
-                    </ul>
-                    <img className={podcastStyles['podcast__cube']} src={cube} alt="Cube" />
                 </div>
             </section>
         </>

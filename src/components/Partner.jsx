@@ -13,50 +13,18 @@ import kuivstar from '../image/kuivstar.png'
 import akkopd from '../image/akkopd.png'
 import arrowPrew from '../image/arrow-prew.svg'
 import arrowNext from '../image/arrow-next.svg'
+import pyramid from '../image/pyramid.png'
 
 
 const Partner = () => {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  };
   return (
     <>
-
-      {/* <section>
-        <div className='partner'>
-          <div className='partner__main'>
-            <h1>Партнери</h1><img src={blueLine} />
-          </div>
-          <div className='partner__wrapper'>
-            <Swiper
-              modules={[Navigation, Pagination, A11y]}
-              speed={1000}
-              spaceBetween={40}
-              slidesPerView={4}
-              slidesPerGroup={4}
-              navigation
-              pagination={{
-                type: 'fraction'
-              }}
-
-            >
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-              <SwiperSlide><img src={kuivstar} /></SwiperSlide>
-              <SwiperSlide><img src={akkopd} /></SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-      </section> */}
       <section>
         <div className={partnerStyles.partner}>
           <div className={partnerStyles.partner__main}>
@@ -64,16 +32,16 @@ const Partner = () => {
             <img src={blueLine} alt="Blue Line" />
           </div>
           <div className={partnerStyles.partner__wrapper}>
+
             <Swiper
-              modules={[Navigation, Pagination, A11y]}
+              pagination={pagination}
+              modules={[Pagination, Navigation, A11y]}
+              className="mySwiper"
               speed={1000}
-              spaceBetween={40}
+              spaceBetween={70}
               slidesPerView={4}
               slidesPerGroup={4}
-              navigation
-              pagination={{
-                type: 'fraction'
-              }}
+              navigation={true}
             >
               <SwiperSlide><img src={kuivstar} alt="Kuivstar" /></SwiperSlide>
               <SwiperSlide><img src={akkopd} alt="Akkopd" /></SwiperSlide>
@@ -83,7 +51,12 @@ const Partner = () => {
               <SwiperSlide><img src={akkopd} alt="Akkopd" /></SwiperSlide>
               <SwiperSlide><img src={kuivstar} alt="Kuivstar" /></SwiperSlide>
               <SwiperSlide><img src={akkopd} alt="Akkopd" /></SwiperSlide>
+              <SwiperSlide><img src={kuivstar} alt="Kuivstar" /></SwiperSlide>
+              <SwiperSlide><img src={akkopd} alt="Akkopd" /></SwiperSlide>
+              <SwiperSlide><img src={kuivstar} alt="Kuivstar" /></SwiperSlide>
+              <SwiperSlide><img src={akkopd} alt="Akkopd" /></SwiperSlide>
             </Swiper>
+            <img className={partnerStyles.partner__pyramid} src={pyramid}  alt='pyramid'/>
           </div>
         </div>
       </section>
