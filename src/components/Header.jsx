@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import headerStyles from '../style/header.module.scss'
 import logo from '../image/logo.png'
-function Header() {
+const Header = () => {
     return (
         <>
             <header className={headerStyles.header}>

@@ -26,7 +26,12 @@ const Command = () => {
                             <div className={commandStyles['command__info']}>
                                 <span className={commandStyles['command__text']}>Марія Іваненко</span>
                                 <span>Ведуча</span>
+                                <ul className={commandStyles.command__summary}>
+                                    <li>dflkg</li>
+                                    <li>fhth</li>
+                                </ul>
                             </div>
+
                         </li>
                         <li className={commandStyles['command__portret']}>
                             <img src={command2} alt="Єва Райська" />

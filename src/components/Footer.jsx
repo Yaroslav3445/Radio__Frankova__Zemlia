@@ -9,7 +9,7 @@ import line1 from '../image/Line 1.svg'
 import line2 from '../image/Line 2.svg'
 import line3 from '../image/Line 3.svg'
 
-function Footer() {
+const Footer = () => {
     return (
         <>
             <footer className={footerStyles.footer}>

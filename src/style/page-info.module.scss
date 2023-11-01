@@ -6,7 +6,6 @@
     padding: 0px 15px 0px 15px;
 
     &__main {
-        width: fit-content;
         position: relative;
 
         h1 {
@@ -69,6 +68,7 @@
 
     &__person {
         align-items: end;
+        position: relative;
     }
 
 
@@ -93,7 +93,6 @@
     @media(max-width:1180px) {
         &__wrapper {
             max-width: 100%;
-            height: auto;
         }
 
 
@@ -113,16 +112,21 @@
 
         &__column {
             flex-direction: column;
-            align-items: center;
         }
 
         &__person {
-            margin-top: 12%;
             flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+
+        &__portret {
+            top: 0;
+            margin-bottom: 10%;
         }
 
         &__image {
-            margin-bottom: 20%;
+            margin-bottom: 50px;
         }
 
         &__text {
@@ -132,7 +136,6 @@
 
 
     @media(max-width:700px) {
-   
 
         &__responsive {
             width: 252.309px;
@@ -142,27 +145,36 @@
             img {
                 width: 252.309px;
                 height: 301.338px;
+                right: 20px;
+                bottom: 26px;
+            }
+        }
+
+        &__portret {
+
+            img {
+                top: 30px;
+                right: 23px;
             }
         }
 
         &__text {
             font-size: 14px;
         }
+
     }
 
     @media(max-width:400px) {
         &__main {
             h1 {
                 font-size: 35px;
-                margin: 20px 0px;
+                margin: 20px 0px 0px 0px;
             }
 
             img {
                 width: 200px;
             }
         }
-        &__info {
-            margin-bottom: 15%;
-        }
+
     }
 }
