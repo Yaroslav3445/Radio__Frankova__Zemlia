@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "nameСontent": "Новини",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 2,
+        "nameContent": "Новини",
+        "content": "Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor   d temporLorem ipsum dolor sit amet, consect d temporLorem ipsum dolor sit amet, consect d temporLorem ipsum dolor sit amet, consect d temporLorem ipsum dolor sit amet, consect d temporLorem ipsum dolor sit amet, consect incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 3,
+
+        "nameСontent": "Новини",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "image": "/src/image/newsImage.png"
+    }
+]

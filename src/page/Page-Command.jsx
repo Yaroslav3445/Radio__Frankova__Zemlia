@@ -6,11 +6,11 @@ import News from './Page-news'
 const PageCommand = () => {
     return (
         <>
-            <News />
-            {/* <div className={pageCommandStyles.command__container}>
+            {/* <News /> */}
+            <div className={pageCommandStyles.command__container}>
                 <Command />
                 <Fullommand />
-            </div> */}
+            </div>
         </>
     )
 }

@@ -14,11 +14,11 @@ import Footer from '../components/Footer';
 function MainPage() {
     return (
         <>
-            <Illustration />
+            {/* <Illustration />
             <Schedule />
             <Podcast />
             <Command />
-            <Partner />
+            <Partner /> */}
         </>
     )
 }

@@ -48,8 +48,15 @@
         display: flex;
         flex-direction: row;
         gap: 41px;
-        color: #fff;
-
+        span{
+            cursor: pointer;
+            transition: color 0.3s ease;
+    
+            &:hover {
+                color: #F1DB49
+            }
+            color: #fff;
+        }
     }
 
     // .header__span
@@ -67,13 +74,12 @@
 
     // .header__li
 
-    &__li {
-        cursor: pointer;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: #F1DB49
-        }
+    
+    &__span{
+    
+    }
+    &__link{
+        text-decoration: none;
     }
 
     // .header__button

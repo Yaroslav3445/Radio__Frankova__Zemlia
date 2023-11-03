@@ -37,35 +37,60 @@
     }
 
     &__info {
-        p {
-            max-width: 551px;
-            height: 61px;
-            font-family: 'Source Sans Pro';
-            overflow: hidden;
+
+        button {
+            width: 170px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+
         }
 
-        span {
-            position: relative;
-            width: 29px;
-            height: 1px;
-            background-color: black;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: -5px;
-                right: -5px;
-                border-width: 5px 5px 5px 0;
-                border-color: transparent black transparent transparent;
-                border-style: solid;
-                z-index: 2;
-            }
-        }
     }
+
+    &__span {
+        transition: 3s;
+    }
+
+    &__paragraf {
+        max-width: 551px;
+        font-size: 18px;
+        font-family: 'Source Sans Pro';
+    }
+
 
     @media(max-width:1250px) {
         &__box {
             width: 90%;
+        }
+    }
+    @media(max-width:748px){
+        &__main {
+    
+            h1 {
+                font-size: 45px;
+                margin: 50px 0px;
+            }
+    
+            img {
+                width: 240px;
+                top: 26%;
+                left: -10%;
+            }
+        }
+        &__paragraf {
+            font-size: 14px;
+        }
+    }
+    @media(max-width:615px) {
+        &__box {
+            width: 90%;
+            flex-direction: column;
+            gap: 0;
         }
     }
 }
