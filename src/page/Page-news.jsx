@@ -29,7 +29,7 @@ const News = () => {
                                 <p className={pageNewsStyles.news__paragraf} style={{
                                     maxHeight: expandedBlocks[item.id] ? '1000px' : '69px',
                                     overflow: 'hidden',
-                                    transition: 'max-height 0.3s ease-in-out',
+                                    transition: expandedBlocks[item.id] ? 'max-height 0.6s ease-in':'max-height 0.4s ease-out',
                                 }}>{item.content}</p>
                                 <button onClick={() => toggleExpand(item.id)} type='button'><span className={pageNewsStyles.news__span}>{expandedBlocks[item.id] ? 'Згорнути' : 'Дізнатися більше'}</span><img src={arrow} alt="arrow" /></button>
                             </div>

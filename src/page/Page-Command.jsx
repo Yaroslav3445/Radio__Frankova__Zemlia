@@ -6,9 +6,8 @@ import News from './Page-news'
 const PageCommand = () => {
     return (
         <>
-            {/* <News /> */}
             <div className={pageCommandStyles.command__container}>
-                <Command />
+                <Command/>
                 <Fullommand />
             </div>
         </>
