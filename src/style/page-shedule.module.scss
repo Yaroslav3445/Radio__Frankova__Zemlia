@@ -1,0 +1,39 @@
+.week {
+    width: 1180px;
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 100px;
+
+
+
+    &__day {
+        font-family: Montserrat;
+        width: 170px;
+        height: 77px;
+        font-weight: 400;
+        font-size: 22px;
+        background-color: #fff;
+        border: 1px solid #4DE5FF;
+        border-right: 0px solid #4DE5FF;
+        cursor: pointer;
+    }
+
+    &__day:nth-child(n+7) {
+        border-right: 1px solid #4DE5FF;
+
+    }
+
+    &__active {
+        font-family: Montserrat;
+        width: 170px;
+        height: 77px;
+        font-weight: 400;
+        font-size: 22px;
+        border: 1px solid #4DE5FF;
+        border-right: 0px solid #4DE5FF;
+        background-color: #4DE5FF;
+        cursor: pointer;
+    }
+}

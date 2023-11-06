@@ -5,16 +5,16 @@ import Footer from './components/Footer'
 import PageCommand from './page/Page-Command'
 import PageInfo from './page/Page-info'
 import PageNews from './page/Page-news'
+import MainPage from './page/MainPage'
 const App = () => {
   return (
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<PageNews />} />
         <Route path='/Page-command' element={<PageCommand />} />
         <Route path='/Page-info' element={<PageInfo />} />
         <Route path='/Page-news' element={<PageNews/>} />
-        <Route path='*' element={<PageNews/>} />
+        <Route path='*' element={<MainPage/>} />
       </Routes>
       <Footer />
     

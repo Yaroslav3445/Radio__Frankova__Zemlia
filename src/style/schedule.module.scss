@@ -9,6 +9,18 @@
         justify-content: center;
         width: 100%;
         position: relative;
+        margin-top: 100px;
+
+        h1 {
+            font-size: clamp(35px, 7vw, 58px);
+            font-weight: 700;
+        }
+    }
+
+    &__yellow-line {
+        width: clamp(200px, 39vw, 318px);
+        position: absolute;
+        bottom: 13.5%;
     }
 
     &__spheres {
@@ -18,61 +30,61 @@
         height: 189px;
     }
 
-    &__yellow-line {
-        position: absolute;
-        bottom: 13.5%;
-    }
-
-    &__h1 {
-        font-size: 58px;
-        font-weight: 700;
-    }
-
 
     &__table-wrap {
         position: relative;
         width: 1180px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
-
-    &__table {}
+    &__table {
+        margin: auto;
+    }
 
 
 
     &__tr {
         display: flex;
         flex-direction: row;
-        border-bottom: 1px solid rgba(77, 230, 255, 0.54);
-
+        border-bottom: 2px solid rgba(77, 230, 255, 0.54);
         td {
-            width: 400px;
-        }
-
-        th {
-            font-size: 28px;
-            font-weight: 500;
+            width: clamp(100px, 44vw, 570px);
         }
     }
 
-    &__tr-head {
+    &__head {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
         border-bottom: none;
+
+        span {
+            font-size: clamp(17px, 3vw, 28px);
+            font-weight: 500;
+        }
     }
 
     &__td {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-right: 1px solid rgba(77, 230, 255, 0.54);
-        font-size: 32px;
+        border-right: 2px solid rgba(77, 230, 255, 0.54);
+        font-size: clamp(20px, 3.5vw, 32px);
     }
 
     &__td-text {
         padding: 5px 5px 5px 20px;
+
+        h2 {
+            font-size: clamp(20px, 3.5vw, 32px);
+        }
+
+        p {
+            font-size: clamp(14px, 3vw, 18px);
+            max-width: 377px;
+        }
     }
 
     &__helix {
@@ -82,4 +94,17 @@
         bottom: 40%;
         right: 7%;
     }
+
+    @media (max-width:1200px) {
+
+        &__table-wrap {
+            width: 100%;
+        }
+
+        &__table {
+            max-width: 700px;
+        }
+    }
+
+
 }
