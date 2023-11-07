@@ -11,11 +11,11 @@ import PageShedule from "../page/Page-shedule";
 function MainPage() {
   return (
     <>
-      {/* <Illustration />
-            <Schedule />
-            <Podcast />
-            <Command /> */}
-            <Partner />
+      <Illustration />
+      <Schedule />
+      <Podcast />
+      <Command />
+      <Partner />
       {/* <PageShedule /> */}
     </>
   );

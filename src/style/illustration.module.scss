@@ -96,19 +96,17 @@
 
     &__background {
         position: absolute;
-        top: -2.2%;
-        left: -22%;
-        width: 970px;
-        height: 788px;
+        left: -200px;
+        width: clamp(300px, 71vw, 970px)
     }
+
+
 
     &__hero {
         position: absolute;
-        bottom: -7.9%;
-        right: 9%;
-        width: 615px;
-        height: 624px;
-
+        width: clamp(150px, 46vw, 640px);
+     
     }
 
+    @media(max-width:1000px) {}
 }

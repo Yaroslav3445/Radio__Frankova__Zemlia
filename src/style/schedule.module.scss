@@ -34,9 +34,7 @@
     &__table-wrap {
         position: relative;
         width: 1180px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+
     }
 
     &__table {
@@ -49,6 +47,7 @@
         display: flex;
         flex-direction: row;
         border-bottom: 2px solid rgba(77, 230, 255, 0.54);
+
         td {
             width: clamp(100px, 44vw, 570px);
         }
@@ -71,14 +70,14 @@
         justify-content: center;
         align-items: center;
         border-right: 2px solid rgba(77, 230, 255, 0.54);
-        font-size: clamp(20px, 3.5vw, 32px);
+        font-size: clamp(18px, 3.5vw, 32px);
     }
 
     &__td-text {
-        padding: 5px 5px 5px 20px;
+        padding: 0px 0px 0px 20px;
 
         h2 {
-            font-size: clamp(20px, 3.5vw, 32px);
+            font-size: clamp(16px, 3.5vw, 32px);
         }
 
         p {
@@ -106,5 +105,10 @@
         }
     }
 
+    @media (max-width:400px) {
+        &__td-text {
+            padding: 0px 0px 0px 10px;
+        }
+    }
 
 }

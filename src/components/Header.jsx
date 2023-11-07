@@ -1,5 +1,5 @@
 import { Link, } from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import PageNews from '../page/Page-news'
 import App from '../App'
@@ -12,7 +12,22 @@ const Header = () => {
         setTab(!tab);
     };
 
-
+   
+  
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 1000) {
+          setTab(false); 
+        }
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+  
     return (
         <>
             <header className={headerStyles.header}>
@@ -30,7 +45,7 @@ const Header = () => {
                             <ul className={`${headerStyles['header__ul']} ${tab ? headerStyles['header__active'] : ''}`}>
                                 <Link onClick={toggleMenu} to='/Page-news' className={headerStyles.header__link}><li>Новини</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-info' className={headerStyles.header__link}><li>Про нас</li></Link>
-                                <Link onClick={toggleMenu} to='' className={headerStyles.header__link}><li>Розклад</li></Link>
+                                <Link onClick={toggleMenu} to='/Page-shedule' className={headerStyles.header__link}><li>Розклад</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-Command' className={headerStyles.header__link}><li>Команда</li></Link>
                                 <Link onClick={toggleMenu} to='' className={headerStyles.header__link}><li>Подкасти</li></Link>
                                 <Link onClick={toggleMenu} to='' className={headerStyles.header__link}><li>Контакти</li></Link>

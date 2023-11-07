@@ -7,7 +7,7 @@
         display: flex;
         justify-content: center;
         font-family: Montserrat;
-        z-index: 3;
+        z-index: 4;
         position: relative;
         position: fixed;
     }
@@ -147,8 +147,7 @@
             &:hover {
                 background-color: rgba(255, 255, 255, 0.119);
             }
-            li{
-            }
+        
         }
     
         &__button-wrap {
