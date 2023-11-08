@@ -26,11 +26,8 @@ const News = () => {
                             <div className={pageNewsStyles.news__image}><img src={item.image} alt="news-image" /></div>
                             <div className={pageNewsStyles.news__info}>
                                 <h2>{item.nameContent}</h2>
-                                <p className={pageNewsStyles.news__paragraf} style={{
-                                    maxHeight: expandedBlocks[item.id] ? '1000px' : '69px',
-                                    overflow: 'hidden',
-                                    transition: expandedBlocks[item.id] ? 'max-height 0.6s ease-in':'max-height 0.4s ease-out',
-                                }}>{item.content}</p>
+                                <p  className={`${pageNewsStyles['news__paragraf']} ${expandedBlocks[item.id] ? pageNewsStyles['news__top'] : pageNewsStyles['news__bottom']}`}>
+                                    {item.content}</p>
                                 <button onClick={() => toggleExpand(item.id)} type='button'><span className={pageNewsStyles.news__span}>{expandedBlocks[item.id] ? 'Згорнути' : 'Дізнатися більше'}</span><img src={arrow} alt="arrow" /></button>
                             </div>
                         </div>

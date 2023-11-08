@@ -1,11 +1,8 @@
 .week {
-    width: 1180px;
-    height: 79px;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-
-
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    justify-content: center;
 
     &__day {
         font-family: Montserrat;
@@ -18,6 +15,43 @@
         cursor: pointer;
     }
 
-   
+}
+
+@media(max-width:1220px) {
+    .week {
+        grid-template-columns: repeat(5, 0fr);
+
+        &__day {
+            width: 170px;
+            height: 77px;
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+}
+
+@media(max-width:856px) {
+    .week {
+        grid-template-columns: repeat(3, 0fr);
+
+        &__day {
+            width: 150px;
+            height: 69px;
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media(max-width:550px) {
+    .week {
+        grid-template-columns: repeat(2, 0fr);
+        &__day {
+            width: 120px;
+            height: 65px;
+            font-size: 16px;
+        }
+    }
+    
    
 }

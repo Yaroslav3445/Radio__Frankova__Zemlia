@@ -58,11 +58,22 @@
     }
 
     &__paragraf {
-        max-width: 551px;
         font-size: 18px;
         font-family: 'Source Sans Pro';
     }
 
+    &__top {
+        max-height: 1000px;
+        overflow: hidden;
+        transition: max-height 1s ease;
+
+    }
+
+    &__bottom {
+        max-height: 69px;
+        overflow: hidden;
+        transition: max-height 0.2s ease;
+    }
 
     @media(max-width:1250px) {
         &__box {

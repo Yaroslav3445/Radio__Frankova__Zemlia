@@ -1,8 +1,5 @@
 import { Link, } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
-import ReactDOM from 'react-dom/client'
-import PageNews from '../page/Page-news'
-import App from '../App'
 import headerStyles from '../style/header.module.scss'
 import logo from '../image/logo.png'
 const Header = () => {
@@ -12,8 +9,6 @@ const Header = () => {
         setTab(!tab);
     };
 
-   
-  
     useEffect(() => {
       const handleResize = () => {
         if (window.innerWidth < 1000) {
@@ -48,7 +43,7 @@ const Header = () => {
                                 <Link onClick={toggleMenu} to='/Page-shedule' className={headerStyles.header__link}><li>Розклад</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-Command' className={headerStyles.header__link}><li>Команда</li></Link>
                                 <Link onClick={toggleMenu} to='' className={headerStyles.header__link}><li>Подкасти</li></Link>
-                                <Link onClick={toggleMenu} to='' className={headerStyles.header__link}><li>Контакти</li></Link>
+                                <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Контакти</li></Link>
                             </ul>
                         </div>
                         <div className={headerStyles['header__button-wrap']}>

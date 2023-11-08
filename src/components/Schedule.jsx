@@ -4,7 +4,6 @@ import scheduleStyles from "../style/schedule.module.scss";
 import spheres from "../image/spheres.png";
 import yellowLine from "../image/yellowLine.svg";
 import helix from "../image/helix.png";
-import Data from "../data/data.json";
 
 const HeadShedule = () => {
   return (
@@ -39,10 +38,20 @@ const Today = () => {
 };
 export { Today };
 
-const Schedule = ({ activeDay }) => {
-  const filteredData = Data.filter((innerArray) => {
-    return innerArray.some((data) => data.day === activeDay);
-  });
+const Schedule = (props) => {
+  const weekDays = ['', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+  const activeDayIndex = weekDays.indexOf(props.activeDay);
+
+  if (activeDayIndex === -1) {
+    return <p>Неправильний день тижня</p>;
+  }
+
+  const activeData = props.data[activeDayIndex - 1];
+
+  if (!activeData || activeData.length === 0) {
+    return <p>Для цього дня немає доступних даних</p>;
+  }
+
 
   return (
     <>
@@ -51,18 +60,16 @@ const Schedule = ({ activeDay }) => {
           <div className={`${scheduleStyles["schedule__table-wrap"]}`}>
             <table className={scheduleStyles.schedule__table}>
               <tbody>
-                {Data.map((innerArray, indexArray) => (
-                  innerArray.map((data, indexArray) => (
-                    < tr key={data.id} className={scheduleStyles.schedule__tr} >
-                      <td className={scheduleStyles.schedule__td}>
-                        {data.session}
-                      </td>
-                      <td className={`${scheduleStyles["schedule__td-text"]}`}>
-                        <h2>{data.nameInfo}</h2>
-                        <p>{data.Info}</p>
-                      </td>
-                    </tr>
-                  ))
+                {activeData.map(data => (
+                  < tr key={data.id} className={scheduleStyles.schedule__tr} >
+                    <td className={scheduleStyles.schedule__td}>
+                      {data.session}
+                    </td>
+                    <td className={`${scheduleStyles["schedule__td-text"]}`}>
+                      <h2>{data.nameInfo}</h2>
+                      <p>{data.Info}</p>
+                    </td>
+                  </tr>
                 ))}
               </tbody>
             </table>

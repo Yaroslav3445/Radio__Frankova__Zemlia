@@ -1,22 +1,24 @@
-import React from "react";
+import React, {createContext, useEffect, useContext} from "react";
 import Illustration from "../components/Illustration";
-import Schedule from "../components/Schedule";
+import { HeadShedule, Today } from "../components/Schedule";
 import Podcast from "../components/Podcast";
 import Command from "../components/Command";
 import Partner from "../components/Partner";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PageShedule from "../page/Page-shedule";
+import Schedule from "../components/Schedule";
+import {Contextfol} from "../components/Context";
 
 function MainPage() {
+  const data = useContext(Contextfol)
+  console.log('data', data)
   return (
     <>
       <Illustration />
-      <Schedule />
+      <HeadShedule />
+      <Today />
+      <Schedule carData ={data.activeDay}/>
       <Podcast />
       <Command />
       <Partner />
-      {/* <PageShedule /> */}
     </>
   );
 }
