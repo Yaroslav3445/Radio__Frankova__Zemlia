@@ -3,9 +3,17 @@ import pageNewsStyles from '../style/page-news.module.scss'
 import yellowLine from '../image/yellowLine.svg'
 import newsimage from '../image/newsImage.png'
 import arrow from '../image/arrow.svg'
+import arrowPage from '../image/arrow-page.svg'
 import articles from '../data/articles.json'
 const News = () => {
     const [expandedBlocks, setExpandedBlocks] = useState({});
+    const [currentPage, setCurrentPage] = useState(1)
+    const articlesPerPage = 3
+
+    const handleClickPage = (page) => {
+        setCurrentPage(page);
+    };
+
 
     const toggleExpand = (id) => {
         setExpandedBlocks((prevState) => ({
@@ -14,6 +22,34 @@ const News = () => {
         }));
     };
 
+    const handlePrevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
+    const handleNextPage = () => {
+        const totalPages = Math.ceil(articles.length / articlesPerPage);
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    }
+
+    const getPageNumbers = () => {
+        const totalPage = Math.ceil(articles.length / articlesPerPage)
+        const pages = Array.from({ length: totalPage }, (_, index) => index + 1)
+        return pages.filter(
+            (pageNumber) =>
+                pageNumber === currentPage ||
+                pageNumber === currentPage - 1 ||
+                pageNumber === currentPage + 1
+        );
+    }
+    const visibleArticles = articles.slice(
+        (currentPage - 1) * articlesPerPage,
+        currentPage * articlesPerPage
+    );
+
     return (
         <>
             <div className={pageNewsStyles.news}>
@@ -21,19 +57,36 @@ const News = () => {
                     <h1>Новини</h1> <img src={yellowLine} alt='yellow line' />
                 </div>
                 <div className={pageNewsStyles.news__wrapper}>
-                    {articles.map(item =>
+                    {visibleArticles.map(item =>
                         <div key={item.id} className={pageNewsStyles.news__box}>
                             <div className={pageNewsStyles.news__image}><img src={item.image} alt="news-image" /></div>
                             <div className={pageNewsStyles.news__info}>
                                 <h2>{item.nameContent}</h2>
-                                <p  className={`${pageNewsStyles['news__paragraf']} ${expandedBlocks[item.id] ? pageNewsStyles['news__top'] : pageNewsStyles['news__bottom']}`}>
+                                <p className={`${pageNewsStyles['news__paragraf']} ${expandedBlocks[item.id] ? pageNewsStyles['news__top'] : pageNewsStyles['news__bottom']}`}>
                                     {item.content}</p>
                                 <button onClick={() => toggleExpand(item.id)} type='button'><span className={pageNewsStyles.news__span}>{expandedBlocks[item.id] ? 'Згорнути' : 'Дізнатися більше'}</span><img src={arrow} alt="arrow" /></button>
                             </div>
                         </div>
                     )}
                 </div>
-            </div >
+                <div className={pageNewsStyles.news__pagination_wrap}>
+                    <button className={`${pageNewsStyles['news__page-number']} ${pageNewsStyles['news__arrow']}  ${pageNewsStyles['news__arrow_prev']}`} onClick={handlePrevPage}> <img src={arrowPage} alt="arrowPage" /> </button>
+                    <div className={pageNewsStyles.news__pagination}>
+                        <div id='bullet' className={pageNewsStyles.news__pagination_bullet}>
+                            {getPageNumbers().map((pageNumber) => (
+                                <button
+                                    key={pageNumber}
+                                    onClick={() => handleClickPage(pageNumber)}
+                                    className={`${pageNumber === currentPage ? pageNewsStyles['active'] : pageNewsStyles['news__page-number']}`}
+                                >
+                                    {pageNumber}
+                                </button>
+                            ))}
+                        </div>
+                    </div >
+                    <button className={`${pageNewsStyles['news__page-number']} ${pageNewsStyles['news__arrow']}  ${pageNewsStyles['news__arrow_next']}`} onClick={handleNextPage}> <img src={arrowPage} alt="arrowPage" /> </button>
+                </div>
+            </div>
         </>
     )
 }

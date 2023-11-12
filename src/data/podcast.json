@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title": "Підкаст 1",
+        "description": "Опис підкасту 1",
+        "audioUrl": "https://example.com/podcast1.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 2,
+        "title": "Підкаст 2",
+        "description": "Опис підкасту 2",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 3,
+        "title": "Підкаст 3",
+        "description": "Опис підкасту 3",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 4,
+        "title": "Підкаст 4",
+        "description": "Опис підкасту 4",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 5,
+        "title": "Підкаст 5",
+        "description": "Опис підкасту 5",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 6,
+        "title": "Підкаст 6",
+        "description": "Опис підкасту 6",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 7,
+        "title": "Підкаст 7",
+        "description": "Опис підкасту 7",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    },
+    {
+        "id": 8,
+        "title": "Підкаст 8",
+        "description": "Опис підкасту 8",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/newsImage.png"
+    }
+
+]

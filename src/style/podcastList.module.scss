@@ -1,0 +1,33 @@
+.podcastList {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 350px); // Три колонки з рівномірною шириною
+    }
+
+    &__podcast {
+        width: 331px;
+        height: 301px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 2px solid #F1DB49;
+
+
+        &:nth-child(4) {
+            grid-column: span 2; // span 2 вказує, що блок повинен займати 2 колонки
+
+        }
+
+        &:nth-child(4),
+        &:nth-child(5) {
+            grid-row: 2;
+            justify-self: center
+        }
+    }
+
+    img {
+
+        width: 300px;
+        height: 254px;
+        flex-shrink: 0;
+    }
+}

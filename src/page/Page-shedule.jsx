@@ -4,7 +4,7 @@ import Schedule from "../components/Schedule";
 import DataWeek from "../data/data.json";
 import { HeadShedule } from "../components/Schedule";
 const Pageshedule = () => {
-  const weekDays = ['', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя',];
+  const weekDays = [ 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя',];
 
   const [activeDay, setActiveDay] = useState(null);
 
@@ -20,7 +20,7 @@ const Pageshedule = () => {
       <section>
         <HeadShedule />
         <ul className={pageSheduleStyles.week}>
-          {weekDays.slice(1).map((day, index) =>
+          {weekDays.map((day, index) =>
             <li key={index}>
               <button
                 onClick={() => setActiveDay(day)}

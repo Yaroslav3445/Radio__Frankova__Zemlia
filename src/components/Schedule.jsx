@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
 import "../style/reset.scss";
 import scheduleStyles from "../style/schedule.module.scss";
 import spheres from "../image/spheres.png";
 import yellowLine from "../image/yellowLine.svg";
 import helix from "../image/helix.png";
 
+
 const HeadShedule = () => {
+
   return (
     <>
       <div className={scheduleStyles.schedule__link}>
@@ -39,20 +41,18 @@ const Today = () => {
 export { Today };
 
 const Schedule = (props) => {
-  const weekDays = ['', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+  const weekDays = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
   const activeDayIndex = weekDays.indexOf(props.activeDay);
 
   if (activeDayIndex === -1) {
     return <p>Неправильний день тижня</p>;
   }
 
-  const activeData = props.data[activeDayIndex - 1];
+  const activeData = props.data[props.activeDay];
 
-  if (!activeData || activeData.length === 0) {
+  if (!activeData || activeData.length === -1) {
     return <p>Для цього дня немає доступних даних</p>;
   }
-
-
   return (
     <>
       <section>

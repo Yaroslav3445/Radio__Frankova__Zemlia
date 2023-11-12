@@ -5,17 +5,14 @@ import Podcast from "../components/Podcast";
 import Command from "../components/Command";
 import Partner from "../components/Partner";
 import Schedule from "../components/Schedule";
-import {Contextfol} from "../components/Context";
 
-function MainPage() {
-  const data = useContext(Contextfol)
-  console.log('data', data)
+function MainPage(props) {
   return (
     <>
       <Illustration />
       <HeadShedule />
       <Today />
-      <Schedule carData ={data.activeDay}/>
+      <Schedule  />
       <Podcast />
       <Command />
       <Partner />

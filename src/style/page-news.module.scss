@@ -40,7 +40,7 @@
     &__info {
 
         button {
-            width: 170px;
+            max-width: 170px;
             background-color: #fff;
             display: flex;
             justify-content: space-between;
@@ -54,7 +54,7 @@
     }
 
     &__span {
-        transition: 3s;
+        margin-right: 10px;
     }
 
     &__paragraf {
@@ -68,12 +68,60 @@
         transition: max-height 1s ease;
 
     }
+    &__more{
+        
+    }
 
     &__bottom {
         max-height: 69px;
         overflow: hidden;
         transition: max-height 0.2s ease;
     }
+
+    &__page-number {
+        background-color: #fff;
+    }
+
+    &__pagination_wrap {
+        max-width: 550px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &__arrow,
+        button {
+            display: flex;
+            width: 64px;
+            height: 64px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid #4DE5FF;
+            transition: 0.3s ease;
+            color: #016475;
+            font-size: clamp(12px, 2vw, 18px);
+            font-weight: 800;
+            cursor: pointer;
+        }
+    }
+
+
+    &__pagination_bullet {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__arrow {
+        position: relative;
+    }
+
+    &__arrow_prev {
+        transform: rotate(180deg);
+    }
+
 
     @media(max-width:1250px) {
         &__box {
@@ -107,5 +155,31 @@
             flex-direction: column;
             gap: 0;
         }
+
+        &__pagination_wrap {
+            padding: 10px;
+
+            &__arrow,
+            button {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+
+        &__pagination {
+            max-width: 200px;
+            overflow: hidden;
+        }
+
+        &__pagination_bullet {
+            width: fit-content;
+            padding: 0px 10px 0px 10px;
+
+        }
     }
+}
+
+.active {
+    background-color: #4DE5FF;
 }

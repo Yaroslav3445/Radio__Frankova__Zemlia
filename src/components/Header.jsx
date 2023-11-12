@@ -42,7 +42,7 @@ const Header = () => {
                                 <Link onClick={toggleMenu} to='/Page-info' className={headerStyles.header__link}><li>Про нас</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-shedule' className={headerStyles.header__link}><li>Розклад</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-Command' className={headerStyles.header__link}><li>Команда</li></Link>
-                                <Link onClick={toggleMenu} to='' className={headerStyles.header__link}><li>Подкасти</li></Link>
+                                <Link onClick={toggleMenu} to='/Page-podcast' className={headerStyles.header__link}><li>Подкасти</li></Link>
                                 <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Контакти</li></Link>
                             </ul>
                         </div>
