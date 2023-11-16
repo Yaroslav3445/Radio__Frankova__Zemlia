@@ -5,17 +5,18 @@ import Podcast from "../components/Podcast";
 import Command from "../components/Command";
 import Partner from "../components/Partner";
 import Schedule from "../components/Schedule";
-
+import Playpodcast from "../components/play-podcast";
 function MainPage(props) {
   return (
     <>
-      <Illustration />
+      {/* <Illustration />
       <HeadShedule />
       <Today />
       <Schedule  />
       <Podcast />
       <Command />
-      <Partner />
+      <Partner /> */}
+      <Playpodcast/>
     </>
   );
 }

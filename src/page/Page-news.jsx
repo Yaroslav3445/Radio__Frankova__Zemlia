@@ -3,8 +3,8 @@ import pageNewsStyles from '../style/page-news.module.scss'
 import yellowLine from '../image/yellowLine.svg'
 import newsimage from '../image/newsImage.png'
 import arrow from '../image/arrow.svg'
-import arrowPage from '../image/arrow-page.svg'
 import articles from '../data/articles.json'
+import Pagination from '../components/pagination';
 const News = () => {
     const [expandedBlocks, setExpandedBlocks] = useState({});
     const [currentPage, setCurrentPage] = useState(1)
@@ -14,7 +14,7 @@ const News = () => {
         setCurrentPage(page);
     };
 
-
+    
     const toggleExpand = (id) => {
         setExpandedBlocks((prevState) => ({
             ...prevState,
@@ -69,23 +69,13 @@ const News = () => {
                         </div>
                     )}
                 </div>
-                <div className={pageNewsStyles.news__pagination_wrap}>
-                    <button className={`${pageNewsStyles['news__page-number']} ${pageNewsStyles['news__arrow']}  ${pageNewsStyles['news__arrow_prev']}`} onClick={handlePrevPage}> <img src={arrowPage} alt="arrowPage" /> </button>
-                    <div className={pageNewsStyles.news__pagination}>
-                        <div id='bullet' className={pageNewsStyles.news__pagination_bullet}>
-                            {getPageNumbers().map((pageNumber) => (
-                                <button
-                                    key={pageNumber}
-                                    onClick={() => handleClickPage(pageNumber)}
-                                    className={`${pageNumber === currentPage ? pageNewsStyles['active'] : pageNewsStyles['news__page-number']}`}
-                                >
-                                    {pageNumber}
-                                </button>
-                            ))}
-                        </div>
-                    </div >
-                    <button className={`${pageNewsStyles['news__page-number']} ${pageNewsStyles['news__arrow']}  ${pageNewsStyles['news__arrow_next']}`} onClick={handleNextPage}> <img src={arrowPage} alt="arrowPage" /> </button>
-                </div>
+                <Pagination
+                    currentPage={currentPage}
+                    handlePrevPage={handlePrevPage}
+                    handleNextPage={handleNextPage}
+                    getPageNumbers={getPageNumbers}
+                    handleClickPage={setCurrentPage}
+                />
             </div>
         </>
     )

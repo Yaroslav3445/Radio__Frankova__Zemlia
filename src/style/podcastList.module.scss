@@ -1,33 +1,74 @@
 .podcastList {
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(3, 350px); // Три колонки з рівномірною шириною
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+    &__list {
+        max-width: 1210px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        justify-content: space-between;
+        padding: 0px 10px 0px 10px;
+
+        // width: fit-content;
+        // margin: auto;
+        // display: grid;
+        // grid-template-columns: repeat(3, 350px); // Три колонки з рівномірною шириною
+    }
+    &__podcast-href{
+        width: 331px;
+        height: 301px;
+    }
     &__podcast {
         width: 331px;
         height: 301px;
-        flex-shrink: 0;
-        border-radius: 20px;
+    }
+
+    &__customStyle1 {
         border: 2px solid #F1DB49;
+    }
 
+    &__customStyle2 {
+        border: 2px solid #02b7df;
+        margin: 43px 0px 49px 14%;
 
-        &:nth-child(4) {
-            grid-column: span 2; // span 2 вказує, що блок повинен займати 2 колонки
+    }
 
-        }
-
-        &:nth-child(4),
-        &:nth-child(5) {
-            grid-row: 2;
-            justify-self: center
-        }
+    &__customStyle3 {
+        margin-left: 0px;
+        border: 2px solid #02b7df;
+        margin-right: 20%;
     }
 
     img {
-
         width: 300px;
         height: 254px;
         flex-shrink: 0;
     }
+
+    @media (max-width:1100px) {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        &__customStyle2 {
+            margin: 0;
+
+        }
+
+        &__customStyle3 {
+            margin: 0;
+        }
+    }
+    @media (max-width:750px) {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
 }
