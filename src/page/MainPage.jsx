@@ -5,8 +5,8 @@ import Podcast from "../components/Podcast";
 import Command from "../components/Command";
 import Partner from "../components/Partner";
 import Schedule from "../components/Schedule";
-import Playpodcast from "../components/play-podcast";
-function MainPage(props) {
+import PlayPodcast from "../components/play-podcast";
+function MainPage() {
   return (
     <>
       {/* <Illustration />
@@ -14,9 +14,9 @@ function MainPage(props) {
       <Today />
       <Schedule  />
       <Podcast />
-      <Command />
-      <Partner /> */}
-      <Playpodcast/>
+      <Command /> */}
+      {/* <Partner /> */}
+      <PlayPodcast/>
     </>
   );
 }

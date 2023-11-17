@@ -8,6 +8,7 @@ import PageNews from './page/Page-news'
 import MainPage from './page/MainPage'
 import Pageshedule from './page/Page-shedule'
 import Pagepodcast from './page/Page-podcast'
+import PlayPodcast from './components/play-podcast'
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/Page-shedule' element={<Pageshedule/>} />
         <Route path='/Page-podcast'  element={<Pagepodcast/>} />
         <Route path='/MainPage'  element={<MainPage/>} />
+        <Route path="/play-podcast/:id" element={<PlayPodcast />} />
       </Routes>
       <Footer />
     

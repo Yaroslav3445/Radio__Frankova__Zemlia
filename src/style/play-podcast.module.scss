@@ -1,0 +1,42 @@
+.listen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: Montserrat;
+    padding-top: 200px;
+
+    &__portret {
+        width: 479px;
+        height: 436px;
+        border-radius: 20px;
+        border: 2px solid #F1DB49;
+        margin-right: 26px;
+
+        img {
+            width: 300.967px;
+            height: 300.894px;
+        }
+    }
+
+    &__block {
+        h1 {
+            font-size: 58px;
+            font-weight: 700;
+        }
+
+        p {
+            max-width: 551px;
+        }
+    }
+
+  
+}
+@media (max-width:1100px) {
+    .listen {
+        flex-direction: column;
+    }
+}
+audio {
+    background-color: rgba(170, 13, 13, 0.998)
+}

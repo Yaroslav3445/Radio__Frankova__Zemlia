@@ -2,8 +2,8 @@
     {
         "id": 1,
         "title": "Підкаст 1",
-        "description": "Опис підкасту 1",
-        "audioUrl": "https://example.com/podcast1.mp3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "audioUrl": "http://audio.libr.rv.ua/storage/uploads/audiopodcast/audio/5/001-%D0%94%D0%BE%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0.mp3",
         "image": "/src/image/newsImage.png"
     },
     {
@@ -61,54 +61,61 @@
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 10,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    } ,{
+    },
+    {
         "id": 11,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 12,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 13,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 14,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 15,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 16,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
-    }, {
+    },
+    {
         "id": 17,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
         "image": "/src/image/newsImage.png"
     }
-
 ]
