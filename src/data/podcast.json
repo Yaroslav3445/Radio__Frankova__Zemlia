@@ -10,7 +10,7 @@
         "id": 2,
         "title": "Підкаст 2",
         "description": "Опис підкасту 2",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "audioUrl": "http://audio.libr.rv.ua/storage/uploads/audiopodcast/audio/5/001-%D0%94%D0%BE%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0.mp3",
         "image": "/src/image/newsImage.png"
     },
     {

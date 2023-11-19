@@ -29,14 +29,42 @@
             max-width: 551px;
         }
     }
+    &__player {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__goPodcast {
+        width: 62px;
+        height: 50px;
+        position: relative;
+    }
 
-  
+    &__triagle {
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 24.5px 0 24.5px 50px;
+        border-color: transparent transparent transparent yellow;
+    }
+
+    &__triagle-2 {
+        transform: rotate(180deg);
+    }
+    &__triagleRight{
+        right: -20px;
+    }
+    &__triagleLeft{
+        left: -20px;
+    }
+
 }
+
 @media (max-width:1100px) {
     .listen {
         flex-direction: column;
     }
-}
-audio {
-    background-color: rgba(170, 13, 13, 0.998)
 }

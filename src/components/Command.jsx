@@ -8,8 +8,7 @@ import yellowLine from '../image/yellowLine.svg'
 import command from '../data/command.json'
 const Command = () => {
     return (
-        <section>    сеанс
-            
+        <section>
             <div className={commandStyles.command}>
                 <div className={commandStyles.command__container}></div>
                 <div className={commandStyles['command__present']}>
