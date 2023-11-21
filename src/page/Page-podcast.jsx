@@ -1,45 +1,58 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom'
-import blueLine from '../image/blueLine.svg'
-import knot from '../image/Knot.png'
-import cube from '../image/cube.png'
-import thors from '../image/thorus.png'
-import PagePodcastStyle from '../style/podcastList.module.scss'
-import podcastData from '../data/podcast.json'
-import "../style/reset.scss";
+// Pagepodcast.jsx
+import React, { useState } from 'react';
+import PodcastList from '../components/PodcastList';
+import NamePage from '../components/NamePage';
+import PagePodcastStyle from '../style/podcastList.module.scss';
+import podcastData from '../data/podcast.json';
+import Pagination from '../components/pagination';
 
 const Pagepodcast = () => {
-    return (
-        <>
-            <section>
-                <div className={PagePodcastStyle.podcastList}>
-                    <div className={PagePodcastStyle.podcastList__main}>
-                        <h1>Подкасти</h1> <img src={blueLine} alt='blue Line' />
-                    </div>
-                    <div className={PagePodcastStyle.podcastList__container}>
-                        <ul className={PagePodcastStyle.podcastList__list}>
-                            {podcastData.map((list, index) => (
-                                <Link key={list.id} to={`/play-podcast/${list.id}`} state={{ podcastData: list }}>
-                                    <li
-                                        className={`${PagePodcastStyle.podcastList__podcast} ${index % 5 < 3
-                                            ? PagePodcastStyle.podcastList__customStyle1
-                                            : PagePodcastStyle.podcastList__customStyle2
-                                            } ${(index + 1) % 5 === 0
-                                                ? `${PagePodcastStyle.podcastList__customStyle3} `
-                                                : ''
-                                            }`}
-                                    > <img src={list.image} alt="podcast" />
-                                    </li>
-                                </Link>
-                            ))}
-                        </ul>
-                        <div className="flflsldf
-                        "></div>
-                    </div>
-                </div>
-            </section >
-        </>
+  const [currentPage, setCurrentPage] = useState(1);
+  const articlesPerPage = 8;
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    const totalPages = Math.ceil(podcastData.length / articlesPerPage);
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const getPageNumbers = () => {
+    const totalPage = Math.ceil(podcastData.length / articlesPerPage);
+    const pages = Array.from({ length: totalPage }, (_, index) => index + 1);
+    return pages.filter(
+      (pageNumber) =>
+        pageNumber === currentPage ||
+        pageNumber === currentPage - 1 ||
+        pageNumber === currentPage + 1
     );
+  };
+
+  return (
+    <section>
+      <div className={PagePodcastStyle.podcastList}>
+        <NamePage />
+        <div className={PagePodcastStyle.podcastList__container}>
+          <PodcastList podcastData={podcastData} currentPage={currentPage} articlesPerPage={articlesPerPage} />
+        </div>
+      </div>
+      <div className={PagePodcastStyle.podcastList__pagination}>
+        <Pagination
+          currentPage={currentPage}
+          handlePrevPage={handlePrevPage}
+          handleNextPage={handleNextPage}
+          getPageNumbers={getPageNumbers}
+          handleClickPage={setCurrentPage}
+        />
+      </div>
+    </section>
+  );
 };
 
 export default Pagepodcast;

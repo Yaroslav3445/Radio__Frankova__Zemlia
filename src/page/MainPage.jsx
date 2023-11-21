@@ -1,23 +1,25 @@
-import React, {createContext, useEffect, useContext} from "react";
+
+import React, { useEffect } from "react";
 import Illustration from "../components/Illustration";
-import { HeadShedule, Today } from "../components/Schedule";
+import { HeadShedule, Today, Schedule } from "../components/Schedule"
 import Podcast from "../components/Podcast";
 import Command from "../components/Command";
 import Partner from "../components/Partner";
-import Schedule from "../components/Schedule";
-import PlayPodcast from "../components/play-podcast";
+import Pageshedule from "./Page-shedule";
+import DataWeek from "../data/data.json";
 function MainPage() {
+  const { weekDays, activeDay } = Pageshedule();
   return (
     <>
-      {/* <Illustration />
+      <Illustration />
       <HeadShedule />
       <Today />
-      <Schedule  />
+      <Schedule data={DataWeek} weekDays={weekDays} activeDay={activeDay} />
       <Podcast />
-      <Command /> */}
-      {/* <Partner /> */}
-      <PlayPodcast/>
+      <Command />
+      <Partner />
     </>
   );
 }
+
 export default MainPage;

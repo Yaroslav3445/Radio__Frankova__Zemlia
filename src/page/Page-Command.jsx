@@ -7,7 +7,7 @@ const PageCommand = () => {
     return (
         <>
             <div className={pageCommandStyles.command__container}>
-                <Command/>
+                <Command />
                 <Fullommand />
             </div>
         </>

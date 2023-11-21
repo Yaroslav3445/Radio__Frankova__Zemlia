@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import "../style/reset.scss";
 import scheduleStyles from "../style/schedule.module.scss";
 import spheres from "../image/spheres.png";
@@ -28,6 +28,7 @@ const HeadShedule = () => {
 };
 
 export { HeadShedule };
+
 const Today = () => {
   return (
     <>
@@ -40,19 +41,20 @@ const Today = () => {
 };
 export { Today };
 
-const Schedule = (props) => {
-  const weekDays = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
-  const activeDayIndex = weekDays.indexOf(props.activeDay);
-
-  if (activeDayIndex === -1) {
-    return <p>Неправильний день тижня</p>;
+const Schedule = ({ data, weekDays, activeDay }) => {
+  if (!weekDays || !activeDay) {
+    return <p>Неправильні дані про тиждень</p>;
   }
 
-  const activeData = props.data[props.activeDay];
+  const activeDayIndex = weekDays.indexOf(activeDay);
 
-  if (!activeData || activeData.length === -1) {
-    return <p>Для цього дня немає доступних даних</p>;
+  if (activeDayIndex === -1 || !data || data.length === 0) {
+    return <p>Неправильні дані або даних для цього дня немає</p>;
   }
+
+  const activeData = data[activeDayIndex];
+
+
   return (
     <>
       <section>
@@ -80,10 +82,11 @@ const Schedule = (props) => {
             />
           </div>
         </div>
+
       </section >
     </>
   );
 };
-export default Schedule;
+export  { Schedule };
 
 

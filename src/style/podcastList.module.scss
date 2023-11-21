@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
     &__list {
         max-width: 1210px;
         display: flex;
@@ -12,10 +11,6 @@
         justify-content: space-between;
         padding: 0px 10px 0px 10px;
 
-        // width: fit-content;
-        // margin: auto;
-        // display: grid;
-        // grid-template-columns: repeat(3, 350px); // Три колонки з рівномірною шириною
     }
     &__podcast-href{
         width: 331px;
@@ -46,6 +41,10 @@
         width: 300px;
         height: 254px;
         flex-shrink: 0;
+    }
+    &__pagination{
+        width: fit-content;
+        margin: auto;
     }
 
     @media (max-width:1100px) {

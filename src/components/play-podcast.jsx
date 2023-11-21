@@ -69,8 +69,8 @@ const PlayPodcast = () => {
                                 className={`${PlayPodcastStyles['listen__audio']}`}
                                 controlsList="nodownload nofullscreen"
                             ></audio>
-                            <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button"><div  className={PlayPodcastStyles.listen__mainTriagle}>
-                                </div></button>
+                            <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button"><div className={PlayPodcastStyles.listen__mainTriagle}>
+                            </div></button>
                             <Link to={`/play-podcast/${nextPodcastId}`} state={{ podcastData: podcastData[nextPodcastIndex] }}>
                                 <button className={PlayPodcastStyles.listen__goPodcast} type="button">
                                     <div className={`${PlayPodcastStyles['listen__triagle']}`}></div>
@@ -82,7 +82,7 @@ const PlayPodcast = () => {
                         </div>
                         <input
                             type="range"
-                            min={0} 
+                            min={0}
                             max={100}
                             step={1}
                             value={volume}

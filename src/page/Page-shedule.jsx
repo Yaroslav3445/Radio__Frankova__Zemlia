@@ -1,12 +1,11 @@
-import React, { useState, useEffect ,} from "react";
+import React, { useState, useEffect } from "react";
 import pageSheduleStyles from "../style/page-shedule.module.scss";
-import Schedule from "../components/Schedule";
 import DataWeek from "../data/data.json";
 import { HeadShedule } from "../components/Schedule";
+import { Schedule } from "../components/Schedule";
 const Pageshedule = () => {
-  const weekDays = [ 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя',];
-
-  const [activeDay, setActiveDay] = useState(null);
+  const weekDays = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+  const [activeDay, setActiveDay] = useState(1);
 
   useEffect(() => {
     const currentDate = new Date();
@@ -42,4 +41,5 @@ const Pageshedule = () => {
     </>
   );
 };
+
 export default Pageshedule;

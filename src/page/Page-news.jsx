@@ -9,6 +9,7 @@ const News = () => {
     const [expandedBlocks, setExpandedBlocks] = useState({});
     const [currentPage, setCurrentPage] = useState(1)
     const articlesPerPage = 3
+    
 
     const handleClickPage = (page) => {
         setCurrentPage(page);

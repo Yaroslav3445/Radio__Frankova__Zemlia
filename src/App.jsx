@@ -19,7 +19,7 @@ const App = () => {
         <Route path='/Page-news' element={<PageNews/>} />
         <Route path='/Page-shedule' element={<Pageshedule/>} />
         <Route path='/Page-podcast'  element={<Pagepodcast/>} />
-        <Route path='/MainPage'  element={<MainPage/>} />
+        <Route path='*'  element={<MainPage/>} />
         <Route path="/play-podcast/:id" element={<PlayPodcast />} />
       </Routes>
       <Footer />

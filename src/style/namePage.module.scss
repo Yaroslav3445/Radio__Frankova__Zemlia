@@ -1,0 +1,23 @@
+.podcastList {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 105px;
+
+    h1 {
+        width: fit-content;
+        height: fit-content;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    img {
+        position: absolute;
+    }
+
+}

@@ -67,7 +67,7 @@
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/cube.png"
     },
     {
         "id": 11,
