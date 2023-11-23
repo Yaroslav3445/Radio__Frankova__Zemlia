@@ -4,35 +4,35 @@
         "title": "Підкаст 1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "audioUrl": "http://audio.libr.rv.ua/storage/uploads/audiopodcast/audio/5/001-%D0%94%D0%BE%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto1.jpg"
     },
     {
         "id": 2,
         "title": "Підкаст 2",
         "description": "Опис підкасту 2",
         "audioUrl": "http://audio.libr.rv.ua/storage/uploads/audiopodcast/audio/5/001-%D0%94%D0%BE%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto2.jpg"
     },
     {
         "id": 3,
         "title": "Підкаст 3",
         "description": "Опис підкасту 3",
-        "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "audioUrl": "https://example.com/podcast3.mp3",
+        "image": "/src/image/podcast-foto3.jpg"
     },
     {
         "id": 4,
         "title": "Підкаст 4",
         "description": "Опис підкасту 4",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto4.jpg"
     },
     {
         "id": 5,
         "title": "Підкаст 5",
         "description": "Опис підкасту 5",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto5.jpg"
     },
     {
         "id": 6,

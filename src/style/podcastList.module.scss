@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+   
     &__list {
         max-width: 1210px;
         display: flex;
@@ -10,19 +11,34 @@
         padding: 10px;
         justify-content: space-between;
         padding: 0px 10px 0px 10px;
-
+        img {
+            width: 280px;
+            height: 290px;
+            margin-left: 5px;
+        }
+    
     }
-    &__podcast-href{
+
+    &__podcast-href {
         width: 331px;
         height: 301px;
     }
+
     &__podcast {
         width: 331px;
         height: 301px;
+        border-radius: 20px;
+        border: 2px solid #F1DB49;
+        display: flex;
+        align-items: center;
+
+   
     }
 
     &__customStyle1 {
         border: 2px solid #F1DB49;
+
+
     }
 
     &__customStyle2 {
@@ -37,12 +53,8 @@
         margin-right: 20%;
     }
 
-    img {
-        width: 300px;
-        height: 254px;
-        flex-shrink: 0;
-    }
-    &__pagination{
+  
+    &__pagination {
         width: fit-content;
         margin: auto;
     }
@@ -63,6 +75,7 @@
             margin: 0;
         }
     }
+
     @media (max-width:750px) {
         &__list {
             grid-template-columns: repeat(1, 1fr);

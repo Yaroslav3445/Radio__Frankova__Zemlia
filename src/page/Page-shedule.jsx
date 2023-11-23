@@ -3,43 +3,60 @@ import pageSheduleStyles from "../style/page-shedule.module.scss";
 import DataWeek from "../data/data.json";
 import { HeadShedule } from "../components/Schedule";
 import { Schedule } from "../components/Schedule";
-const Pageshedule = () => {
+
+
+const Pageshedule = ({ onDataUpdate }) => {
   const weekDays = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
-  const [activeDay, setActiveDay] = useState(1);
+  const [activeDay, setActiveDay] = useState('');
+
+  const handleDayClick = (day) => {
+    setActiveDay(day);
+  };
 
   useEffect(() => {
     const currentDate = new Date();
     const currentDayIndex = currentDate.getDay();
 
-    setActiveDay(weekDays[currentDayIndex]);
-  }, []);
+    setActiveDay(weekDays[currentDayIndex - 1]);
+
+    if (typeof onDataUpdate === 'function') {
+      onDataUpdate({ data: DataWeek, weekDays, activeDay: weekDays[currentDayIndex] });
+    }
+  }, []); // Викликається лише під час монтування компонента
+
+  useEffect(() => {
+    if (typeof onDataUpdate === 'function') {
+      onDataUpdate({ data: DataWeek, weekDays, activeDay });
+    }
+  }, [onDataUpdate, activeDay, weekDays]);
 
   return (
     <>
       <section>
         <HeadShedule />
         <ul className={pageSheduleStyles.week}>
-          {weekDays.map((day, index) =>
+          {weekDays.map((day, index) => (
             <li key={index}>
               <button
-                onClick={() => setActiveDay(day)}
-                className={pageSheduleStyles.week__day} style={
-                  {
-                    backgroundColor: day === activeDay ? ' #4DE5FF' : '#fff',
-                    color: day === activeDay ? '#fff' : '#000',
-                    transition: '0.3s ease'
-                  }
-                }
+                onClick={() => handleDayClick(day)}
+                className={pageSheduleStyles.week__day}
+                style={{
+                  backgroundColor: day === activeDay ? '#4DE5FF' : '#fff',
+                  color: day === activeDay ? '#fff' : '#000',
+                  transition: '0.3s ease',
+                }}
               >
                 {day}
               </button>
             </li>
-          )}
+          ))}
         </ul>
         <Schedule data={DataWeek} weekDays={weekDays} activeDay={activeDay} />
       </section>
     </>
   );
 };
+
+
 
 export default Pageshedule;

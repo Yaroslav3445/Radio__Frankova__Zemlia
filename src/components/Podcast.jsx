@@ -10,6 +10,7 @@ const Podcast = () => {
             <NamePage />
             <div className={PodcastStyle.podcast}>
                 <PodcastList podcastData={podcastData} currentPage={1} articlesPerPage={5} />
+                
             </div>
         </section>
     );
