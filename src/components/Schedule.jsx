@@ -10,7 +10,7 @@ const HeadShedule = () => {
 
   return (
     <>
-      <div className={scheduleStyles.schedule__link}>
+      <div className={scheduleStyles.schedule__link} >
         <img
           className={scheduleStyles.schedule__spheres}
           src={spheres}
@@ -87,6 +87,6 @@ const Schedule = ({ data, weekDays, activeDay }) => {
     </>
   );
 };
-export  { Schedule };
+export { Schedule };
 
 

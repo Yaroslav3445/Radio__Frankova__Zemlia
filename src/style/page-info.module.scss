@@ -1,5 +1,4 @@
 .about {
-    font-family: Montserrat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,21 +6,13 @@
 
     &__main {
         position: relative;
-
-        h1 {
-            width: fit-content;
-            font-size: 58px;
-            font-weight: 700;
-            margin: 71px 0px;
-
-        }
-
     }
 
     &__blueLine {
+        width: clamp(220px, 46vw, 384px);
         position: absolute;
-        top: 23%;
-        left: -22%;
+        top: 19%;
+        left: -28%;
     }
 
     &__wrapper {
@@ -36,14 +27,7 @@
         position: relative;
     }
 
-    &__info {
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-        }
-
-    }
-
+   
     &__text {
         max-width: 590px;
         font-size: 18px;
@@ -95,8 +79,6 @@
         &__wrapper {
             max-width: 100%;
         }
-
-
     }
 
     @media(max-width:1070px) {
@@ -127,16 +109,7 @@
     }
 
     @media(max-width:748px) {
-        &__main {
-            h1 {
-                font-size: 45px;
-                margin: 50px 0px 20px 0px;
-            }
-
-            img {
-                width: 300px;
-            }
-        }
+        
 
         &__responsive {
             width: 252.309px;
@@ -165,17 +138,5 @@
 
     }
 
-    @media(max-width:400px) {
-        &__main {
-            h1 {
-                font-size: 35px;
-                margin: 20px 0px 0px 0px;
-            }
-
-            img {
-                width: 200px;
-            }
-        }
-
-    }
+  
 }

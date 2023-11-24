@@ -43,11 +43,11 @@ const Partner = () => {
                   slidesPerGroup: 1,
                   spaceBetween: 35,
                 },
-                445: {
+                455: {
                   slidesPerView: 2,
                   slidesPerGroup: 2,
                   spaceBetween: 35,
-                  speed:100,
+                  speed: 100,
 
                 },
                 1065: {

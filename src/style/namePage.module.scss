@@ -3,21 +3,12 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 105px;
 
-    h1 {
-        width: fit-content;
-        height: fit-content;
-        color: #000;
-        font-family: Montserrat;
-        font-size: 58px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
+ 
     img {
+        width: clamp(230px, 46vw, 384px);
         position: absolute;
+        top: 17%;
     }
 
 }

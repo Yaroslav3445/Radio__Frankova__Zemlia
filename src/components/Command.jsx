@@ -7,6 +7,7 @@ import thors from '../image/thorus.png'
 import yellowLine from '../image/yellowLine.svg'
 import command from '../data/command.json'
 const Command = () => {
+    const title = 'Наша Команда'
     return (
         <section>
             <div className={commandStyles.command}>

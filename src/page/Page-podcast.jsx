@@ -35,7 +35,7 @@ const Pagepodcast = () => {
   };
 
   return (
-    <section>
+    <main>
       <div className={PagePodcastStyle.podcastList}>
         <NamePage />
         <div className={PagePodcastStyle.podcastList__container}>
@@ -51,7 +51,7 @@ const Pagepodcast = () => {
           handleClickPage={setCurrentPage}
         />
       </div>
-    </section>
+    </main>
   );
 };
 

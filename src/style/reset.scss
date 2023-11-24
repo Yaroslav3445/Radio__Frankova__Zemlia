@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Montserrat;
 }
 
 ul,
@@ -11,4 +12,9 @@ li {
 button {
     border: none;
     background-color: transparent;
+}
+
+h1 {
+    font-size: clamp(35px, 7vw, 58px);
+    font-weight: 700;
 }

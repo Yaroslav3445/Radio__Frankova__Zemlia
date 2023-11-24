@@ -14,16 +14,16 @@ const App = () => {
     <>
       <Header />
       <Routes>
+        <Route path='*' element={<MainPage />} />
         <Route path='/Page-command' element={<PageCommand />} />
         <Route path='/Page-info' element={<PageInfo />} />
-        <Route path='/Page-news' element={<PageNews/>} />
-        <Route path='/Page-shedule' element={<Pageshedule/>} />
-        <Route path='/Page-podcast'  element={<Pagepodcast/>} />
-        <Route path='*'  element={<MainPage/>} />
+        <Route path='/Page-news' element={<PageNews />} />
+        <Route path='/Page-shedule' element={<Pageshedule />} />
+        <Route path='/Page-podcast' element={<Pagepodcast />} />
         <Route path="/play-podcast/:id" element={<PlayPodcast />} />
       </Routes>
       <Footer />
-    
+
     </>
   )
 }

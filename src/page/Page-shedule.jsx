@@ -32,7 +32,6 @@ const Pageshedule = ({ onDataUpdate }) => {
 
   return (
     <>
-      <section>
         <HeadShedule />
         <ul className={pageSheduleStyles.week}>
           {weekDays.map((day, index) => (
@@ -52,7 +51,6 @@ const Pageshedule = ({ onDataUpdate }) => {
           ))}
         </ul>
         <Schedule data={DataWeek} weekDays={weekDays} activeDay={activeDay} />
-      </section>
     </>
   );
 };

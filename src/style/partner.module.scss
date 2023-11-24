@@ -1,28 +1,22 @@
 :root {
     --swiper-pagination-bullet-horizontal-gap: 7px;
-    --swiper-pagination-bottom: 7%
+    --swiper-pagination-bottom: 7%;
 }
 
 .partner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Montserrat;
 
     &__main {
         display: flex;
         justify-content: center;
         position: relative;
-        font-family: Montserrat;
-
-        h1 {
-            font-size: 58px;
-            font-weight: 700;
-        }
 
         img {
+            width: clamp(230px, 46vw, 384px);
             position: absolute;
-            bottom: 17%;
+            bottom: 20%;
             left: -10%;
         }
     }
@@ -45,7 +39,7 @@
         }
     }
 
-    @media(max-width:445px) {
+    @media(max-width:455px) {
         &__wrapper {
             max-width: 205px;
         }
@@ -60,6 +54,8 @@
 
     .swiper-wrapper {
         position: relative;
+        cursor: pointer;
+
     }
 
     .swiper-button-prev,
@@ -105,14 +101,34 @@
     @media(max-width:1065px) {
 
         .swiper-button-next {
-            background-image: url('../image/arrow-next.svg');
             right: 26%;
         }
 
         .swiper-button-prev {
-            background-image: url('../image/arrow-prew.svg');
             left: 26%;
         }
     }
 
+    @media(max-width:455px) {
+
+        .swiper-button-next {
+            right: 6%;
+            top: 95%;
+
+        }
+
+        .swiper-button-prev {
+            left: 9%;
+            top: 95%;
+        }
+
+        .swiper-pagination-bullet {
+            margin-top: 10px;
+        }
+        :root {
+            --swiper-pagination-bullet-horizontal-gap: 10px;
+            --swiper-pagination-bottom: 15%;
+        }
+    }
+   
 }

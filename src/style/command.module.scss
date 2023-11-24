@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Montserrat;
     position: relative;
     overflow: hidden;
 
@@ -12,14 +11,10 @@
 
     &__present {
         position: relative;
-
-        h1 {
-            font-size: 58px;
-            font-weight: 700;
-        }
     }
 
     &__yellowLine {
+        width: clamp(195px, 39vw, 318px);
         position: absolute;
         top: 20%;
         right: -6.6%;
@@ -127,16 +122,6 @@
             bottom: -102%;
         }
 
-        &__present {
-            h1 {
-                font-size: 34px;
-            }
-
-            img {
-                top: 22px;
-                width: 190px;
-            }
-        }
 
         &__helix {
             top: -4.2%;
@@ -144,16 +129,5 @@
         }
     }
 
-    @media (max-width:500px) {
-        &__present {
-            h1 {
-                font-size: 26px;
-            }
-
-            img {
-                top: 16px;
-                width: 140px;
-            }
-        }
-    }
+    
 }

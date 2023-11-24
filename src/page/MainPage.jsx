@@ -11,22 +11,23 @@ import MainPageStyles from "../style/mainPage.module.scss"
 function MainPage() {
 
   const [scheduleData, setScheduleData] = React.useState(null);
-
   const handleDataUpdate = (data) => {
     setScheduleData(data);
   };
   return (
     <>
-      <Illustration />
-      <HeadShedule />
-      <Today />
-      <div className={MainPageStyles.main}><Pageshedule onDataUpdate={handleDataUpdate} /></div>
-      {scheduleData && (
-        <Schedule data={scheduleData.data} weekDays={scheduleData.weekDays} activeDay={scheduleData.activeDay} />
-      )}
-      <Podcast />
-      <Command />
-      <Partner />
+      <main>
+        <Illustration />
+        <HeadShedule />
+        <Today />
+        <div className={MainPageStyles.main}><Pageshedule onDataUpdate={handleDataUpdate} /></div>
+        {scheduleData && (
+          <Schedule data={scheduleData.data} weekDays={scheduleData.weekDays} activeDay={scheduleData.activeDay} />
+        )}
+        <Podcast />
+        <Command />
+        <Partner />
+      </main>
     </>
   );
 }

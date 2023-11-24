@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    font-family: Montserrat;
     padding-top: 200px;
 
     &__portret {
@@ -12,21 +11,33 @@
         border-radius: 20px;
         border: 2px solid #F1DB49;
         margin-right: 26px;
+        display: flex;
+        align-items: center;
 
         img {
-            width: 300.967px;
-            height: 300.894px;
+            width: 80%;
+            height: 80%;
         }
     }
 
     &__block {
+        width: 325px;
+
         h1 {
-            font-size: 58px;
-            font-weight: 700;
+            font-size: clamp(30px, 7vw, 58px);
         }
 
         p {
-            max-width: 551px;
+            font-size: clamp(14px, 3vw, 18px);
+        }
+
+        button {
+            border-radius: 20px;
+            cursor: pointer;
+
+            &:active {
+                background-color: rgba(0, 0, 0, 0.040);
+            }
         }
     }
 
@@ -39,36 +50,7 @@
     }
 
     &__goPodcast {
-        width: 100px;
-        height: 55px;
-        position: relative;
-    }
-
-    &__triagle {
-        position: absolute;
-        top: 3px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 24.5px 0 24.5px 50px;
-        border-color: transparent transparent transparent yellow;
-    }
-
-    &__triagle-2 {
         transform: rotate(180deg);
-    }
-
-    &__triagleRight {
-        right: 12px;
-    }
-
-    &__triagleLeft {
-        left: 38px;
-    }
-
-    &__sound {
-        width: 267px;
-        height: 2px;
     }
 
     &__play {
@@ -81,30 +63,35 @@
         }
     }
 
-    &__mainTriagle {
-        width: 0;
-        height: 0;
-        border-top: 39.5px solid transparent;
-        border-bottom: 39.5px solid transparent;
-        border-left: 79px solid#6867AB;
-        cursor: pointer;
+
+
+    @media (max-width:650px) {
+        &__portret {
+            width: 400px;
+            height: 354px;
+        }
+
+       
+
+
     }
 
+    @media (max-width:500px) {
+        &__portret {
+            width: 280px;
+            height: 254px;
+        }
 
-}
+        &__block {
+            width: 280px;
+        }
 
-@media (max-width:1100px) {
-
-    .listen {
-        flex-direction: column;
     }
 }
 
-
-
-
-
-
+input {
+    width: 100%;
+}
 
 input[type="range"] {
     -webkit-appearance: none;
@@ -127,5 +114,17 @@ input[type="range"] {
         transition: background 0.25s;
     }
 
+
+}
+
+@media (max-width:1100px) {
+    .listen {
+        flex-direction: column;
+
+        &__portret {
+            margin-right: 0px;
+        }
+
+    }
 
 }

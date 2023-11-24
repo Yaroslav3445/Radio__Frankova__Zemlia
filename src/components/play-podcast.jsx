@@ -3,7 +3,8 @@ import { useLocation, useParams, Link } from 'react-router-dom';
 import PlayPodcastStyles from '../style/play-podcast.module.scss';
 import podcastData from '../data/podcast.json';
 import '../style/reset.scss';
-
+import play from '../image/play.svg'
+import musicClick from '../image/music-prev.svg'
 const PlayPodcast = () => {
     const { id } = useParams();
     const location = useLocation();
@@ -53,13 +54,8 @@ const PlayPodcast = () => {
                         <p>{currentPodcastData.description}</p>
                         <div className={PlayPodcastStyles.listen__player}>
                             <Link to={`/play-podcast/${prevPodcastId}`} state={{ podcastData: podcastData[prevPodcastIndex] }}>
-                                <button className={PlayPodcastStyles.listen__goPodcast} type="button">
-                                    <div
-                                        className={`${PlayPodcastStyles['listen__triagle']} ${PlayPodcastStyles['listen__triagle-2']}   ${PlayPodcastStyles['listen__triagleLeft']}`}
-                                    ></div>
-                                    <div
-                                        className={`${PlayPodcastStyles['listen__triagle']} ${PlayPodcastStyles['listen__triagle-2']}`}
-                                    ></div>
+                                <button type="button">
+                                    <img src={musicClick} alt="music" />
                                 </button>
                             </Link>
                             <audio
@@ -69,14 +65,10 @@ const PlayPodcast = () => {
                                 className={`${PlayPodcastStyles['listen__audio']}`}
                                 controlsList="nodownload nofullscreen"
                             ></audio>
-                            <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button"><div className={PlayPodcastStyles.listen__mainTriagle}>
-                            </div></button>
+                            <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button"><img src={play} alt="play" /></button>
                             <Link to={`/play-podcast/${nextPodcastId}`} state={{ podcastData: podcastData[nextPodcastIndex] }}>
                                 <button className={PlayPodcastStyles.listen__goPodcast} type="button">
-                                    <div className={`${PlayPodcastStyles['listen__triagle']}`}></div>
-                                    <div
-                                        className={`${PlayPodcastStyles['listen__triagle']}  ${PlayPodcastStyles['listen__triagleRight']}`}
-                                    ></div>
+                                    <img src={musicClick} alt="music" />
                                 </button>
                             </Link>
                         </div>
