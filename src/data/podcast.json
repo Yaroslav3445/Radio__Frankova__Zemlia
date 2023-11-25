@@ -39,83 +39,244 @@
         "title": "Підкаст 6",
         "description": "Опис підкасту 6",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto6.jpg"
     },
     {
         "id": 7,
         "title": "Підкаст 7",
         "description": "Опис підкасту 7",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto7.jpg"
     },
     {
         "id": 8,
         "title": "Підкаст 8",
         "description": "Опис підкасту 8",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto8.jpg"
     },
     {
         "id": 9,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 9",
+        "description": "Опис підкасту 9",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto9.jpg"
     },
     {
         "id": 10,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 10",
+        "description": "Опис підкасту 10",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/cube.png"
+        "image": "/src/image/podcast-foto10.jpg"
     },
     {
         "id": 11,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 11",
+        "description": "Опис підкасту 11",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto11.jpg"
     },
     {
         "id": 12,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 12",
+        "description": "Опис підкасту 12",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto12.jpg"
     },
     {
         "id": 13,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 13",
+        "description": "Опис підкасту 13",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto13.jpg"
     },
     {
         "id": 14,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 14",
+        "description": "Опис підкасту 14",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto14.jpg"
     },
     {
         "id": 15,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 15",
+        "description": "Опис підкасту 15",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto15.jpg"
     },
     {
         "id": 16,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 16",
+        "description": "Опис підкасту 16",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto16.jpg"
     },
     {
         "id": 17,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
+        "title": "Підкаст 17",
+        "description": "Опис підкасту 17",
         "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/newsImage.png"
+        "image": "/src/image/podcast-foto17.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Підкаст 18",
+        "description": "Опис підкасту 18",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto18.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Підкаст 19",
+        "description": "Опис підкасту 19",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto19.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Підкаст 20",
+        "description": "Опис підкасту 20",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto20.jpg"
+    },
+    {
+        "id": 21,
+        "title": "Підкаст 21",
+        "description": "Опис підкасту 21",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto21.jpg"
+    },
+    {
+        "id": 22,
+        "title": "Підкаст 22",
+        "description": "Опис підкасту 22",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto22.jpg"
+    },
+    {
+        "id": 23,
+        "title": "Підкаст 23",
+        "description": "Опис підкасту 23",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto23.jpg"
+    },
+    {
+        "id": 24,
+        "title": "Підкаст 24",
+        "description": "Опис підкасту 24",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto24.jpg"
+    },
+    {
+        "id": 25,
+        "title": "Підкаст 25",
+        "description": "Опис підкасту 25",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto25.jpg"
+    },
+    {
+        "id": 26,
+        "title": "Підкаст 26",
+        "description": "Опис підкасту 26",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto26.jpg"
+    },
+    {
+        "id": 27,
+        "title": "Підкаст 27",
+        "description": "Опис підкасту 27",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto27.jpg"
+    },
+    {
+        "id": 28,
+        "title": "Підкаст 28",
+        "description": "Опис підкасту 28",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto17.jpg"
+    },
+    {
+        "id": 29,
+        "title": "Підкаст 29",
+        "description": "Опис підкасту 29",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto29.jpg"
+    },
+    {
+        "id": 30,
+        "title": "Підкаст 30",
+        "description": "Опис підкасту 30",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto19.jpg"
+    },
+    {
+        "id": 31,
+        "title": "Підкаст 31",
+        "description": "Опис підкасту 31",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto20.jpg"
+    },
+    {
+        "id": 32,
+        "title": "Підкаст 32",
+        "description": "Опис підкасту 32",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto21.jpg"
+    },
+    {
+        "id": 33,
+        "title": "Підкаст 33",
+        "description": "Опис підкасту 33",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto22.jpg"
+    },
+    {
+        "id": 34,
+        "title": "Підкаст 34",
+        "description": "Опис підкасту 34",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto23.jpg"
+    },
+    {
+        "id": 35,
+        "title": "Підкаст 35",
+        "description": "Опис підкасту 35",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto13.jpg"
+    },
+    {
+        "id": 36,
+        "title": "Підкаст 36",
+        "description": "Опис підкасту 36",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto14.jpg"
+    },
+    {
+        "id": 37,
+        "title": "Підкаст 37",
+        "description": "Опис підкасту 37",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto15.jpg"
+    },
+    {
+        "id": 38,
+        "title": "Підкаст 38",
+        "description": "Опис підкасту 38",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto16.jpg"
+    },
+    {
+        "id": 39,
+        "title": "Підкаст 39",
+        "description": "Опис підкасту 39",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto17.jpg"
+    },
+    {
+        "id": 40,
+        "title": "Підкаст 40",
+        "description": "Опис підкасту 40",
+        "audioUrl": "https://example.com/podcast2.mp3",
+        "image": "/src/image/podcast-foto18.jpg"
     }
 ]

@@ -6,8 +6,8 @@
 
     &__main {
         position: relative;
+        margin-bottom: clamp(25px, 5vw, 50px);
 
-     margin: 0px 0px  50px 0px;
         img {
             width: clamp(200px, 39vw, 318px);
             position: absolute;
@@ -33,6 +33,13 @@
         border: 2px solid #4DE5FF;
     }
 
+    &__image {
+        img {
+            width: 300.2px;
+            height: 196.654px;
+        }
+    }
+
     &__info {
 
         button {
@@ -46,6 +53,9 @@
 
         }
 
+        h2 {
+            font-size: clamp(19px, 4vw, 28px);
+        }
 
     }
 
@@ -79,10 +89,18 @@
     }
 
     @media(max-width:748px) {
-       
+
+     
 
         &__paragraf {
             font-size: 14px;
+        }
+
+        &__image {
+            img {
+                width: 250.2px;
+                height: 180.654px;
+            }
         }
     }
 

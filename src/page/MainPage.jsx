@@ -25,7 +25,7 @@ function MainPage() {
           <Schedule data={scheduleData.data} weekDays={scheduleData.weekDays} activeDay={scheduleData.activeDay} />
         )}
         <Podcast />
-        <Command />
+        <Command  itemsToShow={4} />
         <Partner />
       </main>
     </>
