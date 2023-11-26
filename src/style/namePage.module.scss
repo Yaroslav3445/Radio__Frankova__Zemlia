@@ -1,14 +1,14 @@
 .podcastList {
-    margin-top: 100px;
     position: relative;
     display: flex;
     justify-content: center;
+    padding-top: 40px;
 
- 
     img {
         width: clamp(230px, 46vw, 384px);
         position: absolute;
-        top: 17%;
+        top: 33%;
+        transform: scalex(-1);
     }
 
 }

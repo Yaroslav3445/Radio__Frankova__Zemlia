@@ -10,19 +10,19 @@ const Header = () => {
     };
 
     useEffect(() => {
-      const handleResize = () => {
-        if (window.innerWidth < 1000) {
-          setTab(false); 
-        }
-      };
-  
-      window.addEventListener("resize", handleResize);
-  
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
+        const handleResize = () => {
+            if (window.innerWidth < 1000) {
+                setTab(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
-  
+
     return (
         <>
             <header className={headerStyles.header}>
@@ -38,7 +38,7 @@ const Header = () => {
                                 <span></span>
                             </div>
                             <ul className={`${headerStyles['header__ul']} ${tab ? headerStyles['header__active'] : ''}`}>
-                            <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Головна</li></Link>
+                                <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Головна</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-news' className={headerStyles.header__link}><li>Новини</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-info' className={headerStyles.header__link}><li>Про нас</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-shedule' className={headerStyles.header__link}><li>Розклад</li></Link>

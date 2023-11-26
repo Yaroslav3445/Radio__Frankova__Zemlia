@@ -17,14 +17,14 @@
         "id": 3,
         "title": "Підкаст 3",
         "description": "Опис підкасту 3",
-        "audioUrl": "https://example.com/podcast3.mp3",
+        "audioUrl": "http://t.me/radiofrankovazemlia/672",
         "image": "/src/image/podcast-foto3.jpg"
     },
     {
         "id": 4,
         "title": "Підкаст 4",
         "description": "Опис підкасту 4",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "audioUrl": "http://t.me/radiofrankovazemlia/676",
         "image": "/src/image/podcast-foto4.jpg"
     },
     {

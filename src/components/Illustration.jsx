@@ -4,6 +4,7 @@ import portret from '../image/portret.png'
 import background2 from '../image/background2.png'
 import flower from '../image/flower.png'
 import illustrationStyles from '../style/illustration.module.scss';
+import illustration from '../image/illustration.png'
 const Illustration = () => {
     return (
         <>
@@ -26,7 +27,7 @@ const Illustration = () => {
                             <img className={illustrationStyles.Illustration__hero} src={portret} alt='portret' />
                         </div>
                     </div>
-                </div>
+                </div> 
             </section>
         </>
     )

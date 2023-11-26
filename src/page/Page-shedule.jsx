@@ -17,12 +17,12 @@ const Pageshedule = ({ onDataUpdate }) => {
     const currentDate = new Date();
     const currentDayIndex = currentDate.getDay();
 
-    setActiveDay(weekDays[currentDayIndex - 1]);
+    setActiveDay(weekDays[currentDayIndex]);
 
     if (typeof onDataUpdate === 'function') {
       onDataUpdate({ data: DataWeek, weekDays, activeDay: weekDays[currentDayIndex] });
     }
-  }, []); // Викликається лише під час монтування компонента
+  }, []); 
 
   useEffect(() => {
     if (typeof onDataUpdate === 'function') {

@@ -5,12 +5,16 @@ import podcastData from '../data/podcast.json';
 import '../style/reset.scss';
 import play from '../image/play.svg'
 import musicClick from '../image/music-prev.svg'
+import volumeBlock from '../image/volume-block.svg'
 const PlayPodcast = () => {
     const { id } = useParams();
     const location = useLocation();
     const [volume, setVolume] = useState(100);
-    const [pause, setPause] = useState(true)
+    const [pause, setPause] = useState(false)
     const audioRef = useRef(null);
+    const restoreVolume = useRef(100)
+    const [isExpanded, setIsExpanded] = useState(false);
+
     const { podcastData: currentPodcastData } = location.state || {};
 
     const currentPodcastIndex = podcastData.findIndex((podcast) => podcast.id === parseInt(id, 10));
@@ -42,6 +46,24 @@ const PlayPodcast = () => {
         }
     }, [volume]);
 
+    const clikVolume = () => {
+        if (audioRef.current) {
+            setIsExpanded(!isExpanded)
+            if (volume === 0) {
+                setVolume(restoreVolume.current)
+            } else {
+                restoreVolume.current = volume
+                setVolume(0);
+
+            }
+            audioRef.current.volume = volume / 100;
+        }
+    };
+
+    const spanStyle = {
+        width: isExpanded ? '25px' : '0px',
+        height: isExpanded ? '2px' : '0px',
+    };
     return (
         <>
             <section>
@@ -72,15 +94,21 @@ const PlayPodcast = () => {
                                 </button>
                             </Link>
                         </div>
-                        <input
-                            type="range"
-                            min={0}
-                            max={100}
-                            step={1}
-                            value={volume}
-                            onChange={volumeMove}
-                            className={PlayPodcastStyles.listen__sound}
-                        />
+                        <div className={PlayPodcastStyles.listen__volume}>
+                            <div className={PlayPodcastStyles.listen__volumeBlock} onClick={clikVolume}>
+                                <img src={volumeBlock} alt="volume-block" />
+                                <span className={`${PlayPodcastStyles["listen__stop"]}`} style={spanStyle} ></span>
+                            </div>
+                            <input
+                                type="range"
+                                min={0}
+                                max={100}
+                                step={1}
+                                value={volume}
+                                onChange={volumeMove}
+                                className={PlayPodcastStyles.listen__sound}
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

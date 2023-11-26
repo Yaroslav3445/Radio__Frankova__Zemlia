@@ -1,5 +1,5 @@
 .header {
-
+    padding: 0px 0px 60px 0px;
 
     &__container {
         width: 100%;
@@ -54,6 +54,7 @@
 
     &__tab {
         display: none;
+
         span {
             width: 30px;
             height: 2px;
@@ -70,6 +71,7 @@
         cursor: pointer;
         transition: color 0.3s ease;
         color: #fff;
+
         &:hover {
             color: #F1DB49
         }
@@ -129,6 +131,7 @@
             transition: max-height 0.3s ease;
             overflow: hidden;
         }
+
         &__active {
             max-height: 300px;
         }
@@ -142,21 +145,22 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             overflow: hidden;
-    
+
             &:hover {
                 background-color: rgba(255, 255, 255, 0.119);
             }
-        
+
         }
-    
+
         &__button-wrap {
             margin: 0;
         }
-        &__button{
+
+        &__button {
             width: 110px;
             font-size: 14px;
         }
     }
 
-  
+
 }

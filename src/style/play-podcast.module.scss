@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding-top: 200px;
+    padding-top: 100px;
 
     &__portret {
         width: 479px;
@@ -63,6 +63,37 @@
         }
     }
 
+    &__volume {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input {
+            width: 265px;
+        }
+    }
+
+    &__volumeBlock {
+        position: relative;
+        height: fit-content;
+        padding: 4px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:active {
+            background-color: rgba(0, 0, 0, 0.040);
+        }
+
+    }
+
+    &__stop {
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: #c40808;
+        left: 0;
+        bottom: 50%;
+        overflow: hidden;
+    }
 
 
     @media (max-width:650px) {
@@ -70,10 +101,6 @@
             width: 400px;
             height: 354px;
         }
-
-       
-
-
     }
 
     @media (max-width:500px) {

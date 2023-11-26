@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Марія Іваненко",
         "jobTitle": "Ведуча",
-        "portfolio": "Співавторка  подкасту - Франкова земля",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLoreiquip ex ea",
+        "portfolio": "Співавторка подкасту - Франкова земля",
+        "personalInfo": "Доброго дня, шановні глядачі! Мене звуть Катя Іваненко, і я вітаю вас у своєму веселому і захоплюючому світі! Сьогодні я хочу розповісти вам трошки більше про себе, щоб ви краще мене пізнали.",
         "image": "/src/image/command-portret1.png"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Єва Рильска",
         "jobTitle": "Журналіст",
         "portfolio": "",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "personalInfo": "Журналістика — це мистецтво дізнатися правду, навчитися розповідати історії і впливати на громадську думку. ",
         "image": "/src/image/command-portret2.png"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Станіслав Лекида",
         "jobTitle": "Редактор",
         "portfolio": "Редактор - Франкова земля",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "personalInfo": "Редагування — це тонке мистецтво, де кожне слово, кожен рядок, має значення. Моя робота як редактора — це не просто виправлення граматичних помилок, але й створення тексту, що лунає ефективно.",
         "image": "/src/image/command-portret3.png"
     },
     {
@@ -28,39 +28,39 @@
         "name": "Максим Сагало",
         "jobTitle": "Ведучий",
         "portfolio": "Співавтор подкасту - Франкова земля",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "personalInfo": "Моє захоплення комунікацією та історіями почалося ще у шкільні роки, коли я виявив свою вроджену любов до слів та виразного мовлення.",
         "image": "/src/image/command-portret4.png"
     },
     {
         "id": 5,
         "name": " Коваленко",
         "jobTitle": "Ведуча",
-        "portfolio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "portfolio": "Ведуча Радіо Франкова Земля",
+        "personalInfo": "Моя пригода із світом ефіру почалася не так давно, але вже стала неймовірним відкриттям.",
         "image": "/src/image/command-portret1.png"
     },
     {
         "id": 6,
         "name": "Аліна Ткаченко",
         "jobTitle": "веб-дизайнер",
-        "portfolio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "portfolio": "Дизайнер сайту Радіо Франкова Земля",
+        "personalInfo": "Вебдизайнер — це справжній митець у цифровому світі. Він чарівно комбінує кольори, форми та тексти, створюючи візуальний ефект, який залишає вас захопленими. ",
         "image": "/src/image/command-portret2.png"
     },
     {
         "id": 7,
         "name": "Сергій Сидоров",
         "jobTitle": "веб-розробник",
-        "portfolio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "portfolio": "Розробник сайту Радіо Франкова Земля",
+        "personalInfo": "Веб розробник — це справжній архітектор цифрового світу. Його завдання — перетворити креативні ідеї вебдизайнера в функціональні та ефективні веб-сайти.",
         "image": "/src/image/command-portret3.png"
     },
     {
         "id": 8,
         "name": "Степан Бондаренко",
         "jobTitle": "Продюсер",
-        "personalInfo": "Lorem ipsum dolor siiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
-        "portfolio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+        "personalInfo": "Продюсер Радіо Франкова Земля",
+        "portfolio": "Продюсер — це справжній організатор, майстер стратегії та водій енергії в світі розваг та творчості.",
         "image": "/src/image/command-portret4.png"
     }
 ]

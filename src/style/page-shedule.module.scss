@@ -45,12 +45,13 @@
 @media(max-width:550px) {
     .week {
         grid-template-columns: repeat(2, 0fr);
+
         &__day {
             width: 120px;
             height: 65px;
             font-size: 16px;
         }
     }
-    
-   
+
+
 }

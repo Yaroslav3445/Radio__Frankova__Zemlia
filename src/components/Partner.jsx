@@ -9,8 +9,8 @@ import "swiper/scss/scrollbar";
 import "../style/reset.scss";
 import partnerStyles from "../style/partner.module.scss";
 import blueLine from "../image/blueLine.svg";
-import kuivstar from "../image/kuivstar.png";
-import akkopd from "../image/akkopd.png";
+import kuivstar from "../image/kuivstar3.png";
+import akkopd from "../image/akkopd.svg";
 import arrowPrew from "../image/arrow-prew.svg";
 import arrowNext from "../image/arrow-next.svg";
 import pyramid from "../image/pyramid.png";
@@ -41,16 +41,16 @@ const Partner = () => {
                 0: {
                   slidesPerView: 1,
                   slidesPerGroup: 1,
-                  spaceBetween: 35,
+                  spaceBetween: 20,
                 },
-                455: {
+                650: {
                   slidesPerView: 2,
                   slidesPerGroup: 2,
                   spaceBetween: 35,
                   speed: 100,
 
                 },
-                1065: {
+                1075: {
                   slidesPerView: 4,
                   slidesPerGroup: 4,
                   spaceBetween: 70,
@@ -58,37 +58,37 @@ const Partner = () => {
               }}
             >
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <img src={akkopd} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <img src={akkopd} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <img src={akkopd} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <img src={akkopd} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <img src={akkopd} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <img src={akkopd} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
