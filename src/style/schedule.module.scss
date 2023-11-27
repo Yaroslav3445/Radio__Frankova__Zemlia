@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 
     &__link {
         display: flex;
@@ -14,14 +15,13 @@
     &__yellow-line {
         width: clamp(200px, 39vw, 318px);
         position: absolute;
-        bottom: 13.5%;
+        bottom: 6.5%;
     }
 
     &__spheres {
         position: absolute;
         left: 12%;
-        width: 189px;
-        height: 189px;
+        z-index: -1;
     }
 
 
@@ -85,8 +85,9 @@
         position: absolute;
         width: 131.48px;
         height: 150.411px;
-        bottom: 40%;
-        right: 7%;
+        bottom: 50%;
+        right: -10%;
+        z-index: -1;
     }
 
     @media (max-width:1200px) {
@@ -97,6 +98,12 @@
 
         &__table {
             max-width: 700px;
+        }
+    }
+
+    @media (max-width:920px) {
+        &__spheres {
+            top: 70%;
         }
     }
 

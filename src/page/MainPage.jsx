@@ -6,8 +6,9 @@ import Podcast from "../components/Podcast";
 import Command from "../components/Command";
 import Partner from "../components/Partner";
 import Pageshedule from "./Page-shedule";
-import DataWeek from "../data/data.json";
 import MainPageStyles from "../style/mainPage.module.scss"
+import Pyramid from "../components/pyramid";
+import Thours from "../components/thours";
 function MainPage() {
 
   const [scheduleData, setScheduleData] = React.useState(null);
@@ -25,8 +26,11 @@ function MainPage() {
           <Schedule data={scheduleData.data} weekDays={scheduleData.weekDays} activeDay={scheduleData.activeDay} />
         )}
         <Podcast />
-        <Command  itemsToShow={4} />
+        <Thours />
+        <Command itemsToShow={4} />
+        <Thours />
         <Partner />
+        <Pyramid />
       </main>
     </>
   );

@@ -43,7 +43,7 @@ const Partner = () => {
                   slidesPerGroup: 1,
                   spaceBetween: 20,
                 },
-                650: {
+                650: { 
                   slidesPerView: 2,
                   slidesPerGroup: 2,
                   spaceBetween: 35,
@@ -94,11 +94,6 @@ const Partner = () => {
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
             </Swiper>
-            <img
-              className={partnerStyles.partner__pyramid}
-              src={pyramid}
-              alt="pyramid"
-            />
           </div>
         </div>
       </section>

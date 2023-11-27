@@ -5,6 +5,8 @@ import newsimage from '../image/newsImage.png'
 import arrow from '../image/arrow.svg'
 import articles from '../data/articles.json'
 import Pagination from '../components/pagination';
+import knot from '../image/Knot.png'
+import thorus from '../image/thorus.png'
 const News = () => {
     const [expandedBlocks, setExpandedBlocks] = useState({});
     const [currentPage, setCurrentPage] = useState(1)
@@ -55,6 +57,7 @@ const News = () => {
         <>
             <main>
                 <div className={pageNewsStyles.news}>
+                <div className={pageNewsStyles.news__knot}><img src={knot} alt="knot" /></div>
                     <div className={pageNewsStyles.news__main}>
                         <h1>Новини</h1> <img src={yellowLine} alt='yellow line' />
                     </div>
@@ -71,6 +74,7 @@ const News = () => {
                             </div>
                         )}
                     </div>
+                    <div className={pageNewsStyles.news__pagination}></div>
                     <Pagination
                         currentPage={currentPage}
                         handlePrevPage={handlePrevPage}
@@ -78,6 +82,7 @@ const News = () => {
                         getPageNumbers={getPageNumbers}
                         handleClickPage={setCurrentPage}
                     />
+                    <div className={pageNewsStyles.news__thours}><img src={thorus} alt="thorus" /></div>
                 </div>
             </main>
         </>

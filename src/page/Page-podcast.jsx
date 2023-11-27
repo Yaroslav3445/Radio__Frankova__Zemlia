@@ -5,6 +5,7 @@ import NamePage from '../components/NamePage';
 import PagePodcastStyle from '../style/podcastList.module.scss';
 import podcastData from '../data/podcast.json';
 import Pagination from '../components/pagination';
+import Thours from '../components/thours';
 
 const Pagepodcast = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -40,6 +41,9 @@ const Pagepodcast = () => {
         <NamePage />
         <div className={PagePodcastStyle.podcastList__container}>
           <PodcastList podcastData={podcastData} currentPage={currentPage} articlesPerPage={articlesPerPage} />
+          <div className={PagePodcastStyle.podcastList__thours}>
+            <Thours />
+          </div>
         </div>
       </div>
       <div className={PagePodcastStyle.podcastList__pagination}>

@@ -3,7 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    position: relative;
     padding-top: 100px;
+    max-height: 436px;
 
     &__portret {
         width: 479px;
@@ -15,20 +17,31 @@
         align-items: center;
 
         img {
-            width: 80%;
-            height: 80%;
+            width: 90%;
+            height: 90%;
+            // width: 457.396px;
+            // height: 367.571px;
+            // flex-shrink: 0;
         }
     }
 
     &__block {
-        width: 325px;
+        width: 500px;
+        height: 436px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h1 {
+            width: 100%;
             font-size: clamp(30px, 7vw, 58px);
+            margin: 0px;
         }
 
         p {
             font-size: clamp(14px, 3vw, 18px);
+            margin: 10px 0px 0px 0px;
         }
 
         button {
@@ -42,7 +55,7 @@
     }
 
     &__player {
-        width: 100%;
+        width: 285px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -64,12 +77,14 @@
     }
 
     &__volume {
+        width: 285px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         input {
-            width: 265px;
+            width: 255px;
+            cursor: pointer;
         }
     }
 
@@ -95,6 +110,12 @@
         overflow: hidden;
     }
 
+    &__knot {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        z-index: -1;
+    }
 
     @media (max-width:650px) {
         &__portret {
@@ -113,6 +134,12 @@
             width: 280px;
         }
 
+        &__knot {
+            img {
+                width: 131px;
+                height: 131px;  
+            }
+        }
     }
 }
 
@@ -147,9 +174,16 @@ input[type="range"] {
 @media (max-width:1100px) {
     .listen {
         flex-direction: column;
+        max-height: 100%;
 
         &__portret {
             margin-right: 0px;
+        }
+
+        &__block {
+            h1 {
+                margin: 30px 0px 0px 0px;
+            }
         }
 
     }

@@ -6,6 +6,8 @@ import '../style/reset.scss';
 import play from '../image/play.svg'
 import musicClick from '../image/music-prev.svg'
 import volumeBlock from '../image/volume-block.svg'
+import knot from '../image/Knot.png'
+
 const PlayPodcast = () => {
     const { id } = useParams();
     const location = useLocation();
@@ -110,6 +112,7 @@ const PlayPodcast = () => {
                             />
                         </div>
                     </div>
+                    <div className={PlayPodcastStyles.listen__knot}><img src={knot} alt="knot" /></div>
                 </div>
             </section>
         </>

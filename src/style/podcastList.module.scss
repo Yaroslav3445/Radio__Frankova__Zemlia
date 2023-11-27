@@ -2,6 +2,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+
+    &__knot {
+        position: absolute;
+        top: -95px;
+        left: -50px;
+        z-index: -1;
+    }
+
+
+    &__container {
+        position: relative;
+    }
 
     &__list {
         max-width: 1210px;
@@ -61,6 +74,20 @@
         margin: auto;
     }
 
+    &__thours {
+        position: absolute;
+        left: -95px;
+        bottom: 21%;
+        z-index: -1;
+    }
+
+    &__cube {
+        position: absolute;
+        right: -10px;
+        bottom: 40%;
+        z-index: -1;
+    }
+
     @media (max-width:1100px) {
         &__list {
             display: grid;
@@ -76,6 +103,17 @@
         &__customStyle3 {
             margin: 0;
         }
+
+        &__cube {
+            display: none;
+        }
+
+        &__thours {
+            left: -108px;
+            bottom: 14%;
+        }
+
+
     }
 
     @media (max-width:750px) {
@@ -83,7 +121,22 @@
             grid-template-columns: repeat(1, 1fr);
         }
 
+        &__knot {
+            top: -80px;
+            left: -100px;
 
+            img {
+                width: 131px;
+                height: 131px;
+            }
+        }
+
+        &__thours {
+            left: -144px;
+            bottom: 24%;
+            width: 127px;
+            height: 120px;
+        }
     }
 
     @media (max-width:650px) {

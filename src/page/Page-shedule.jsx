@@ -40,7 +40,7 @@ const Pageshedule = ({ onDataUpdate }) => {
                 onClick={() => handleDayClick(day)}
                 className={pageSheduleStyles.week__day}
                 style={{
-                  backgroundColor: day === activeDay ? '#4DE5FF' : '#fff',
+                  backgroundColor: day === activeDay ? '#4DE5FF' : 'rgba(77, 229, 255, 0)',
                   color: day === activeDay ? '#fff' : '#000',
                   transition: '0.3s ease',
                 }}

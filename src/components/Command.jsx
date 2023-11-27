@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import '../style/reset.scss'
 import commandStyles from '../style/command.module.scss'
 import helix from '../image/helix.png'
-import thors from '../image/thorus.png'
 import yellowLine from '../image/yellowLine.svg'
 import command from '../data/command.json'
 const Command = ({ itemsToShow }) => {
@@ -33,7 +32,6 @@ const Command = ({ itemsToShow }) => {
                             </li>
                         ))}
                     </ul>
-                    <img className={commandStyles['command__thorus']} src={thors} alt="Thors" />
                 </div>
             </div>
         </section>
