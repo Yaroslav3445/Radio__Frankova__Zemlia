@@ -11,17 +11,17 @@ const HeadShedule = () => {
   return (
     <>
       <div className={scheduleStyles.schedule__link} >
-        <img
-          className={scheduleStyles.schedule__spheres}
-          src={spheres}
-          alt="Spheres"
-        />
-        <h1>Розклад</h1>
-        <img
-          className={`${scheduleStyles["schedule__yellow-line"]}`}
-          src={yellowLine}
-          alt="Yellow Line"
-        />
+          <img
+            className={scheduleStyles.schedule__spheres}
+            src={spheres}
+            alt="Spheres"
+          />
+          <h1>Розклад</h1>
+          <img
+            className={`${scheduleStyles["schedule__yellow-line"]}`}
+            src={yellowLine}
+            alt="Yellow Line"
+          />
       </div>
     </>
   );
@@ -75,12 +75,12 @@ const Schedule = ({ data, weekDays, activeDay }) => {
                 ))}
               </tbody>
             </table>
-            <img
+          </div>
+          <img
               className={scheduleStyles.schedule__helix}
               src={helix}
               alt="Helix"
             />
-          </div>
         </div>
 
       </section >

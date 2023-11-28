@@ -1,4 +1,53 @@
-.command__container{
+.command {
     overflow: hidden;
+    position: relative;
 
+    &__image {
+        z-index: -1;
+        position: absolute;
+    }
+
+    &__helix {
+        top: 14.7%;
+        left: -1.5%;
+    }
+
+    &__thours {
+        right: -3%;
+        bottom: 25%;
+
+        img {
+            width: 147px;
+            height: 170px;
+        }
+    }
+
+    @media(max-width: 1300px) {
+        &__helix {
+            top: 7.7%;
+        }
+
+        &__thours {
+            bottom: 36%;
+        }
+    }
+
+    @media(max-width: 750px) {
+        &__helix {
+            top: 4%;
+            img {
+                width: 121px;
+                height: 121px;
+            }
+        }
+
+        &__thours {
+            bottom: 44%;
+
+            img {
+                width: 121px;
+                height: 121px;
+            }
+        }
+    }
 }

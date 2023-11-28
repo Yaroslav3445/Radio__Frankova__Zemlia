@@ -2,8 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PagePodcastStyle from '../style/podcastList.module.scss';
-import knot from '../image/Knot.png'
-import cube from '../image/cube.png'
 const PodcastList = ({ podcastData, currentPage, articlesPerPage }) => {
     const startIndex = (currentPage - 1) * articlesPerPage;
     const endIndex = currentPage * articlesPerPage;
@@ -12,9 +10,6 @@ const PodcastList = ({ podcastData, currentPage, articlesPerPage }) => {
     return (
         <section>
             <div className={PagePodcastStyle.podcastList}>
-                <div className={PagePodcastStyle.podcastList__knot}>
-                    <img src={knot} alt="knot" />
-                </div>
                 <ul className={PagePodcastStyle.podcastList__list}>
                     {visibleArticles.map((list, index) => (
                         <Link
@@ -35,9 +30,7 @@ const PodcastList = ({ podcastData, currentPage, articlesPerPage }) => {
                         </Link>
                     ))}
                 </ul>
-                <div className={PagePodcastStyle.podcastList__cube}>
-                    <img src={cube} alt="cube" />
-                </div>
+             
             </div>
         </section>
     );

@@ -5,8 +5,9 @@ import NamePage from '../components/NamePage';
 import PagePodcastStyle from '../style/podcastList.module.scss';
 import podcastData from '../data/podcast.json';
 import Pagination from '../components/pagination';
-import Thours from '../components/thours';
-
+import Thours from '../components/Thours';
+import Cube from '../components/Cube'
+import Knot from '../components/knot'
 const Pagepodcast = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const articlesPerPage = 8;
@@ -38,22 +39,30 @@ const Pagepodcast = () => {
   return (
     <main>
       <div className={PagePodcastStyle.podcastList}>
-        <NamePage />
-        <div className={PagePodcastStyle.podcastList__container}>
-          <PodcastList podcastData={podcastData} currentPage={currentPage} articlesPerPage={articlesPerPage} />
-          <div className={PagePodcastStyle.podcastList__thours}>
-            <Thours />
+        <div className={PagePodcastStyle.podcastList__page}>
+          <NamePage />
+          <div className={PagePodcastStyle.podcastList__container}>
+            <PodcastList podcastData={podcastData} currentPage={currentPage} articlesPerPage={articlesPerPage} />
+            <div className={`${PagePodcastStyle['podcastList__image']} ${PagePodcastStyle['podcastList__knot']}`}>
+              <Knot/>
+            </div>
+            <div className={`${PagePodcastStyle['podcastList__image']} ${PagePodcastStyle['podcastList__thours']}`}>
+              <Thours />
+            </div>
+            <div className={`${PagePodcastStyle['podcastList__image']} ${PagePodcastStyle['podcastList__cube']}`}>
+              <Cube />
+            </div>
           </div>
         </div>
-      </div>
-      <div className={PagePodcastStyle.podcastList__pagination}>
-        <Pagination
-          currentPage={currentPage}
-          handlePrevPage={handlePrevPage}
-          handleNextPage={handleNextPage}
-          getPageNumbers={getPageNumbers}
-          handleClickPage={setCurrentPage}
-        />
+        <div className={PagePodcastStyle.podcastList__pagination}>
+          <Pagination
+            currentPage={currentPage}
+            handlePrevPage={handlePrevPage}
+            handleNextPage={handleNextPage}
+            getPageNumbers={getPageNumbers}
+            handleClickPage={setCurrentPage}
+          />
+        </div>
       </div>
     </main>
   );

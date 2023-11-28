@@ -1,12 +1,12 @@
 .illustration {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     height: 680px;
     background-color: #6867AB;
     overflow: hidden;
 
     &__wrapper {
-        width: 1190px;
+        width: 1300px;
         display: flex;
         flex-direction: row;
     }
@@ -32,6 +32,7 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
+        filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.25));
     }
 
 
@@ -79,7 +80,7 @@
 
     &__flower {
         position: absolute;
-        right: -23%;
+        right: -40px;
         top: 20%;
         width: 388px;
         height: 380px;
@@ -91,16 +92,65 @@
     &__background {
         position: absolute;
         left: -200px;
-        width: clamp(300px, 71vw, 970px)
+        bottom: -94px;
+        width: 970.538px;
+        height: 788.563px;
     }
 
 
 
     &__hero {
         position: absolute;
-        width: clamp(150px, 46vw, 640px);
-     
+        width: 615px;
+        height: 624px;
+        bottom: -50px;
+        left: -19px;
     }
 
-    @media(max-width:1000px) {}
+    @media(max-width:1330px) {
+        &__wrapper {
+            width: 94%;
+        }
+
+        &__flower {
+            width: 338px;
+            height: 330px;
+            top: 25%;
+
+        }
+
+        &__background {
+            width: 910.538px;
+            height: 688.563px;
+        }
+
+        &__hero {
+            width: 535px;
+            height: 544px;
+
+        }
+
+        &__button {
+            width: 384px;
+            height: 122px;
+
+        }
+
+        &__bus {
+            img {
+                width: 229px;
+                height: 163px;
+            }
+        }
+
+    }
+
+    @media(max-width:1190px) {
+        &__wrapper {
+            width: 100%;
+            padding: 0px 0px 0px 20px;
+        }
+    }
+
+    @media(max-width:1190px) {}
 }

@@ -1,19 +1,18 @@
 .podcastList {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
 
-    &__knot {
-        position: absolute;
-        top: -95px;
-        left: -50px;
-        z-index: -1;
+    &__page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
     }
-
 
     &__container {
         position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     &__list {
@@ -31,8 +30,6 @@
         }
 
     }
-
-
 
     &__podcast {
         width: 331px;
@@ -74,18 +71,29 @@
         margin: auto;
     }
 
-    &__thours {
+    &__image {
         position: absolute;
-        left: -95px;
-        bottom: 21%;
         z-index: -1;
     }
 
+    &__thours {
+        left: 0;
+        bottom: 22%;
+
+        img {
+            width: 147px;
+            height: 170px;
+        }
+    }
+
+    &__knot {
+        top: -9%;
+        left: 0;
+    }
+
     &__cube {
-        position: absolute;
-        right: -10px;
+        right: 0px;
         bottom: 40%;
-        z-index: -1;
     }
 
     @media (max-width:1100px) {
@@ -105,11 +113,14 @@
         }
 
         &__cube {
-            display: none;
+            img {
+                width: 180px;
+                height: 180px;
+            }
         }
 
         &__thours {
-            left: -108px;
+            left: 0;
             bottom: 14%;
         }
 
@@ -122,17 +133,23 @@
         }
 
         &__knot {
-            top: -80px;
-            left: -100px;
+            top: -1%;
+            left: 0;
 
             img {
                 width: 131px;
                 height: 131px;
             }
         }
-
+        &__cube {
+            right: 0;
+            img {
+                width: 153px;
+                height: 153px;
+            }
+        }
         &__thours {
-            left: -144px;
+            left: 0%;
             bottom: 24%;
             width: 127px;
             height: 120px;
@@ -146,6 +163,4 @@
         }
 
     }
-
-
 }

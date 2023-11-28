@@ -16,7 +16,6 @@ const Command = ({ itemsToShow }) => {
                     <img className={commandStyles['command__yellowLine']} src={yellowLine} alt="Yellow Line" />
                 </div>
                 <div className={commandStyles['command__peson-wrap']}>
-                    <img className={commandStyles['command__helix']} src={helix} alt="Helix" />
                     <ul className={commandStyles['command__person']}>
                         {command.slice(0, itemsToShow).map(info => (
                             <li key={info.id} className={commandStyles['command__portret']}>

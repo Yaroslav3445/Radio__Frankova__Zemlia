@@ -14,14 +14,19 @@
         h1 {
             font-size: clamp(33px, 7vw, 58px);
         }
+
     }
 
     &__portret {
         width: fit-content;
-            box-shadow: 0.5px 0.5px 10px #888888;
+        box-shadow: 0.5px 0.5px 10px #888888;
 
         img {
             width: 283px;
+        }
+
+        &:nth-child(-n + 4) {
+            margin-bottom: 40px;
         }
     }
 
@@ -128,6 +133,13 @@
             right: -34%;
             bottom: -15%;
         }
+        &__portret {
+
+            &:nth-child(-n + 4) {
+                margin-bottom: 0px;
+            }
+        }
+        
     }
 
     @media (max-width:650px) {
