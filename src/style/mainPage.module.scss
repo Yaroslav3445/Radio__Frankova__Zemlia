@@ -8,10 +8,10 @@
 
     &__podcast {
         position: relative;
-        overflow: hidden;
+        overflow: hidden
     }
 
-    &__command {
+    &__relative {
         position: relative;
     }
 
@@ -44,6 +44,10 @@
     &__helix {
         top: 21%;
         left: -1.5%;
+    }
+
+    &__pyramid {
+
     }
 
     @media(max-width:1300px) {
@@ -95,7 +99,6 @@
         }
 
         &__helix {
-
             top: 7%;
 
             img {

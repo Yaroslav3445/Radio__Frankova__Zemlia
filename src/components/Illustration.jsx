@@ -23,8 +23,8 @@ const Illustration = () => {
                         </div>
                         < div className={illustrationStyles.illustration__image}>
                             <img className={illustrationStyles.illustration__flower} src={flower} alt="Flower" />
-                            <img  className={illustrationStyles.illustration__background} src={background2} alt="Background" />
-                            <img  className={illustrationStyles.illustration__hero} src={portret} alt='portret' />
+                            <img className={illustrationStyles.illustration__background} src={background2} alt="Background" />
+                            <img className={illustrationStyles.illustration__hero} src={portret} alt='portret' />
                         </div>
                     </div>
                 </div>

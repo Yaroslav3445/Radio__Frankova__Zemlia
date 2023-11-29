@@ -37,23 +37,24 @@ function MainPage() {
           </div >
           <Podcast />
         </div>
-        <div className={`${MainPageStyles['main__image']} ${MainPageStyles['main__cube']}`}>
-          <Cube />
-        </div >
         <div className={`${MainPageStyles['main__image']} ${MainPageStyles['main__knot']}`}>
           <Knot />
         </div >
-        <div className={MainPageStyles.main__command}>
+        <div className={MainPageStyles.main__relative}>
           <Command itemsToShow={4} />
           <div className={`${MainPageStyles['main__image']} ${MainPageStyles['main__helix']}`}>
-          <Helix />
+            <Helix />
           </div>
           <div className={`${MainPageStyles['main__image']} ${MainPageStyles['main__thoursCommand']}`}>
-          <Thours />
+            <Thours />
           </div>
         </div>
-        <Partner />
-        <Pyramid />
+        <div className={MainPageStyles.main__relative}>
+          <Partner />
+          <div className={`${MainPageStyles['main__image']} ${MainPageStyles['main__pyramid']}`}>
+            <Pyramid />
+          </div>
+        </div>
       </main>
     </>
   );

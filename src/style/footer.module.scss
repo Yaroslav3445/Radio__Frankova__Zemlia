@@ -41,7 +41,6 @@
         overflow: hidden;
     }
 
-    // .footer__social
 
     &__social {
         display: flex;
@@ -52,14 +51,12 @@
         z-index: 1;
     }
 
-    // .footer__text
 
     &__text {
         font-size: clamp(12px, 3vw, 42px);
         font-weight: 400;
     }
 
-    // .footer__icon
 
     &__icon {
         display: flex;
