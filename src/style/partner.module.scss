@@ -99,16 +99,32 @@
     @media(max-width:1075px) {
 
         .swiper-button-next {
-            right: 26%;
+            right: 25%;
         }
 
         .swiper-button-prev {
-            left: 26%;
+            left: 25%;
         }
 
     }
 
     @media(max-width:650px) {
+
+        .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 80px;
+            justify-content: center;
+            align-items: end;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+
+        }
 
         .swiper-button-next {
             right: 6%;
@@ -124,13 +140,11 @@
         }
 
         .swiper-button-prev {
-            left: 9%;
+            left: 4%;
             top: 95%;
         }
 
-        .swiper-pagination-bullet {
-            margin-top: 10px;
-        }
+
 
         :root {
             --swiper-pagination-bullet-horizontal-gap: 10px;

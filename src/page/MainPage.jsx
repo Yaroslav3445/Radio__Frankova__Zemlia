@@ -49,7 +49,7 @@ function MainPage() {
             <Thours />
           </div>
         </div>
-        <div className={MainPageStyles.main__relative}>
+        <div className={MainPageStyles.main__partner}>
           <Partner />
           <div className={`${MainPageStyles['main__image']} ${MainPageStyles['main__pyramid']}`}>
             <Pyramid />

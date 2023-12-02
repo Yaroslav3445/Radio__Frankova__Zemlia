@@ -27,7 +27,7 @@
 
     &__block {
         width: 500px;
-        height: 436px;
+        max-height: 436px;
         display: flex;
         flex-direction: column;
         justify-content: center;

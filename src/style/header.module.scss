@@ -78,7 +78,6 @@
 
     }
 
-    // .header__button
     &__button-wrap {
         margin-left: 48px;
     }
@@ -112,10 +111,17 @@
         }
 
         &__tab {
+            position: relative;
             display: flex;
             flex-direction: column;
-            gap: 5px;
             cursor: pointer;
+            height: 15px;
+            width: 30px;
+
+            span {
+                position: absolute;
+                gap: 5px;
+            }
         }
 
         &__ul {
@@ -134,6 +140,7 @@
 
         &__active {
             max-height: 300px;
+
         }
 
         &__link {
@@ -150,6 +157,10 @@
                 background-color: rgba(255, 255, 255, 0.119);
             }
 
+            li {
+                font-size: 16px;
+            }
+
         }
 
         &__button-wrap {
@@ -162,5 +173,35 @@
         }
     }
 
+    @media(max-width:768px) {
+        &__ul {
+            top: 49px;
+        }
 
+        &__menu-wrap {
+            width: 110px;
+        }
+
+        &__link {
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        &__active {
+            max-height: 250px;
+        }
+
+        &__menu {
+            height: 70px;
+        }
+
+        &__logo {
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
 }

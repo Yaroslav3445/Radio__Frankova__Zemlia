@@ -8,7 +8,15 @@ const Header = () => {
     const toggleMenu = () => {
         setTab(!tab);
     };
-
+    const animation = {
+        position: tab === false ? '' : '40%',
+        // transform: tab === false ? '' : 'rotate(-45deg)',
+        transition: ' transform 1.3s'
+    }
+    const animation2 = {
+        // transform: tab === false ? '' : 'rotate(60deg)',
+        transition: ' transform 1.3s'
+    }
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 1000) {
@@ -33,11 +41,11 @@ const Header = () => {
                                 <img src={logo} alt="Logo" />
                             </div>
                             <div onClick={toggleMenu} className={headerStyles['header__tab']}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <span style={animation}></span>
+                                <span  style={animation}></span>
+                                <span  style={animation2}></span>
                             </div>
-                            <ul className={`${headerStyles['header__ul']} ${tab ? headerStyles['header__active'] : ''}`}>
+                            <ul className={`${headerStyles['header__ul']} ${tab ? headerStyles['header__active'] : ''}`} >
                                 <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Головна</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-news' className={headerStyles.header__link}><li>Новини</li></Link>
                                 <Link onClick={toggleMenu} to='/Page-info' className={headerStyles.header__link}><li>Про нас</li></Link>

@@ -13,6 +13,7 @@
 
     &__relative {
         position: relative;
+        overflow: hidden
     }
 
     &__knot {
@@ -31,6 +32,7 @@
         overflow: hidden;
     }
 
+
     &__thoursCommand {
         bottom: -4%;
         right: -3.5%;
@@ -47,7 +49,7 @@
     }
 
     &__pyramid {
-
+        z-index: 3;
     }
 
     @media(max-width:1300px) {
@@ -55,6 +57,14 @@
             bottom: -3.5%;
         }
 
+    }
+
+    @media(max-width:1080px) {
+        &__pyramid {
+            img {
+                width: 20vw;
+            }
+        }
     }
 
     @media(max-width:750px) {
