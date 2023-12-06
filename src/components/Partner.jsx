@@ -10,7 +10,7 @@ import "../style/reset.scss";
 import partnerStyles from "../style/partner.module.scss";
 import blueLine from "../image/blueLine.svg";
 import akkopd from "../image/akkopd.png";
-import kuivstar from "../image/kuivstar.svg"
+import kuivstar from "../image/kuivstar.png"
 ;
 
 const Partner = () => {

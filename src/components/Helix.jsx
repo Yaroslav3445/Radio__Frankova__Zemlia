@@ -4,7 +4,7 @@ const Helix = () => {
     return (
         <>
             <div>
-                <img src={helix} alt="" />
+                <img src={helix} alt="helix" />
             </div>
         </>
     );
