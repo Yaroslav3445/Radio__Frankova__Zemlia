@@ -1,8 +1,8 @@
 import React from 'react'
 import pageCommandStyles from '../style/page-command.module.scss'
 import Command from '../components/Command'
-import Thours from '../components/Thours'
-import Helix from '../components/helix'
+import Thours from '../components/Thours-img'
+import Helix from '../components/Helix-img'
 const PageCommand = () => {
     return (
         <>

@@ -7,11 +7,11 @@ import Command from "../components/Command";
 import Partner from "../components/Partner";
 import Pageshedule from "./Page-shedule";
 import MainPageStyles from "../style/mainPage.module.scss"
-import Pyramid from "../components/Pyramid";
-import Thours from "../components/Thours";
-import Cube from "../components/Cube";
-import Knot from "../components/knot";
-import Helix from "../components/helix";
+import Pyramid from "../components/Pyramid-img";
+import Thours from "../components/Thours-img";
+import Cube from "../components/Cube-img";
+import Knot from "../components/Knot-img";
+import Helix from "../components/Helix-img";
 function MainPage() {
 
   const [scheduleData, setScheduleData] = React.useState(null);

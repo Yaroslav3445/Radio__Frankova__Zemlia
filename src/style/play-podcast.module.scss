@@ -19,9 +19,6 @@
         img {
             width: 90%;
             height: 90%;
-            // width: 457.396px;
-            // height: 367.571px;
-            // flex-shrink: 0;
         }
     }
 
@@ -148,7 +145,6 @@ input {
 }
 
 input[type="range"] {
-    -webkit-appearance: none;
 
     &::-webkit-slider-runnable-track {
         background: linear-gradient(to right, #F1DB49, #F1DB49);
