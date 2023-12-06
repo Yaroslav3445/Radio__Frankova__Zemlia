@@ -1,282 +1,282 @@
 [
     {
         "id": 1,
-        "title": "Підкаст 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "audioUrl": "http://audio.libr.rv.ua/storage/uploads/audiopodcast/audio/5/001-%D0%94%D0%BE%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0.mp3",
+        "title": "Йосипа Фиштика",
+        "description": "Фиштик Йосип Іванович народився в селі Верхнє Висоцьке Турківського району на Львівщині в багатодітній родині.Відомий журналіст радіомовлення. Популярний український поет-пісняр. Автор понад десятку пісенних та поетичних збірок.",
+        "audioUrl": "https://anchor.fm/s/82ff04d8/podcast/play/47458542/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-1-10%2Fb04ef367-c5d7-c47e-134d-acfc168b7b31.mp3",
         "image": "/src/image/podcast-foto1.jpg"
     },
     {
         "id": 2,
-        "title": "Підкаст 2",
-        "description": "Опис підкасту 2",
-        "audioUrl": "http://audio.libr.rv.ua/storage/uploads/audiopodcast/audio/5/001-%D0%94%D0%BE%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0.mp3",
+        "title": "Роман Шагало",
+        "description": "Громадянин України, народився 31.05.1965 р., освіта вища, Політична партія “Народний рух України”, КП “Дрогобичводоканал” Дрогобицької міської ради, Директор, місце проживання: Україна, Львівська область, м. Дрогобич.",
+        "audioUrl": "https://static.hromadske.radio/2023/10/hr_marafon_v-2023-10-05_kovalev1.mp3",
         "image": "/src/image/podcast-foto2.jpg"
     },
     {
         "id": 3,
-        "title": "Підкаст 3",
-        "description": "Опис підкасту 3",
-        "audioUrl": "http://t.me/radiofrankovazemlia/672",
+        "title": "Леся Нестор",
+        "description": "Жив на Січі старий козак Мамай. Вмів та любив воювати, аж його вороги боялися та тремтіли, почувши ім'я козака.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/24171766/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-18%2F0462afc5-fa2d-1ffc-8b71-87703c0790ad.mp3",
         "image": "/src/image/podcast-foto3.jpg"
     },
     {
         "id": 4,
-        "title": "Підкаст 4",
-        "description": "Опис підкасту 4",
-        "audioUrl": "http://t.me/radiofrankovazemlia/676",
+        "title": "День Соборності України",
+        "description": "Історія становлення, скасування та відновлення 22 січня Україна відзначає День Соборності.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/79070004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-24%2F301aeaed-cc41-71e1-b068-301b0dbe24c9.mp3",
         "image": "/src/image/podcast-foto4.jpg"
     },
     {
         "id": 5,
-        "title": "Підкаст 5",
-        "description": "Опис підкасту 5",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Голос місіонаря, Борис Юста",
+        "description": "Сьогодні найпопулярнішим періодичним виданням Української греко-католицької церкви є, безперечно, журнал «Місіонар».",
+        "audioUrl": "https://radiozapad.net/hosts/unt/1206.mp3",
         "image": "/src/image/podcast-foto5.jpg"
     },
     {
         "id": 6,
-        "title": "Підкаст 6",
-        "description": "Опис підкасту 6",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "День Матері",
+        "description": "Щороку День матері в Україні відзначають у другу неділю травня. У 2023 році це свято припадає на 14 травня.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/23525809/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-4%2F10ba51b3-1830-1334-9365-7f4ddff9e695.mp3",
         "image": "/src/image/podcast-foto6.jpg"
     },
     {
         "id": 7,
-        "title": "Підкаст 7",
-        "description": "Опис підкасту 7",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Nica Nicaleo",
+        "description": " Українська письменниця, громадська діячка та журналістка. Дипломант конкурсу «Коронація слова-2010» за роман «Dolce Vita».",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/24430365/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-26%2Fa69fdcb4-4133-fdfc-923e-a553d87c4c62.mp3",
         "image": "/src/image/podcast-foto7.jpg"
     },
     {
         "id": 8,
-        "title": "Підкаст 8",
-        "description": "Опис підкасту 8",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Єва Ємець",
+        "description": "Жив на Січі старий козак Мамай. Вмів та любив воювати, аж його вороги боялися та тремтіли, почувши ім'я козака.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/21571060/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-24%2F40ee4156-0571-dee0-9a4c-937655172185.mp3",
         "image": "/src/image/podcast-foto8.jpg"
     },
     {
         "id": 9,
-        "title": "Підкаст 9",
-        "description": "Опис підкасту 9",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Надія Ліщинська",
+        "description": "У першому епізоді поговоримо про вплив воєнного контенту на дитину: як батькам убезпечити дітей від такого типу контенту, яким є вплив на сон та ментальне здоров’я.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/21232087/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-17%2Fd9c0e0c8-4a61-6783-ce12-e8f79b05ce78.mp3",
         "image": "/src/image/podcast-foto9.jpg"
-    },
+    }, 
     {
         "id": 10,
-        "title": "Підкаст 10",
-        "description": "Опис підкасту 10",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Катерина Бараняк",
+        "description": "Колись-то давно, не з моєї пам'яті, мабуть, ще й батьків і дідів наших не було на світі, жив собі убогий чоловік з жінкою.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20859561/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-9%2Ff23038ea-a790-a6c8-ec28-ab4bf3fd04d3.mp3",
         "image": "/src/image/podcast-foto10.jpg"
     },
     {
         "id": 11,
-        "title": "Підкаст 11",
-        "description": "Опис підкасту 11",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Максим Швадчак",
+        "description": "Був собі чоловік та жінка, мали вони цапа й барана. І були ті цап та баран великі приятелі — куди цап, туди й баран.",
+        "audioUrl": "https://pstatic.nv.ua/podcast/audio/272/27225.mp3",
         "image": "/src/image/podcast-foto11.jpg"
     },
     {
         "id": 12,
-        "title": "Підкаст 12",
-        "description": "Опис підкасту 12",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Василь Ґабор",
+        "description": "Десь за горами, за лісами, не знати в якій державі жив раз один цар.",
+        "audioUrl": "https://radiozapad.net/hosts/unt/1206.mp3",
         "image": "/src/image/podcast-foto12.jpg"
     },
     {
         "id": 13,
-        "title": "Підкаст 13",
-        "description": "Опис підкасту 13",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Леся Татарська",
+        "description": "Як був собі дід та баба. У діда була дочка і в баби дочка; обидві вже були дівки. Дідової дочки баба не любила.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20531414/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-2%2Fd0b97620-7990-3a44-6268-48ed4eeab5aa.mp3",
         "image": "/src/image/podcast-foto13.jpg"
     },
     {
         "id": 14,
-        "title": "Підкаст 14",
-        "description": "Опис підкасту 14",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Михайло Сікора",
+        "description": "Жили собі дід та баба. Вже й старі стали, а дітей нема. Журяться дід та баба: «Хто нашої й смерті догляне, що в нас дітей нема?",
+        "audioUrl": "https://static.hromadske.radio/2023/10/hr_marafon_v-2023-10-05_kovalev1.mp3",
         "image": "/src/image/podcast-foto14.jpg"
     },
     {
         "id": 15,
-        "title": "Підкаст 15",
-        "description": "Опис підкасту 15",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Програма вітань",
+        "description": "Програма вітань 'Від серця до серця' №7 15/05/2022 Володимир Чуба - іменинник.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/78437474/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-10%2F4c873cf7-9f75-e7ab-4d50-dcdb750a0084.mp3",
         "image": "/src/image/podcast-foto15.jpg"
     },
     {
         "id": 16,
-        "title": "Підкаст 16",
-        "description": "Опис підкасту 16",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Дара Корній",
+        "description": "Жили на світі чоловік та жінка, і в них було сім синів, але ті сини не жили в згоді, а завжди ворогували та билися поміж собою. Мати сердилася за те на них.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/23525809/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-4%2F10ba51b3-1830-1334-9365-7f4ddff9e695.mp3",
         "image": "/src/image/podcast-foto16.jpg"
     },
     {
         "id": 17,
-        "title": "Підкаст 17",
-        "description": "Опис підкасту 17",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Юрій Юрчак",
+        "description": "Жив колись один цар. Він мав сина-одинака. А держава в нього була дуже багата. Цар і не знав, чим більше пишатися: державою чи сином.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/79070004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-24%2F301aeaed-cc41-71e1-b068-301b0dbe24c9.mp33",
         "image": "/src/image/podcast-foto17.jpg"
     },
     {
         "id": 18,
-        "title": "Підкаст 18",
-        "description": "Опис підкасту 18",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Марія Кузьменко",
+        "description": "Були собі дід та баба. Поїхав дід на ярмарок та й купив собі козу.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20531414/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-2%2Fd0b97620-7990-3a44-6268-48ed4eeab5aa.mp3",
         "image": "/src/image/podcast-foto18.jpg"
     },
     {
         "id": 19,
-        "title": "Підкаст 19",
-        "description": "Опис підкасту 19",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Віктор Винник",
+        "description": "В іншому царстві, у козацькому гетьманстві, у такому селі, як Пикарі, там жило два брати: один убогий, другий багатий. ",
+        "audioUrl": "https://static.hromadske.radio/2023/10/hr_marafon_v-2023-10-05_kovalev1.mp3",
         "image": "/src/image/podcast-foto19.jpg"
     },
     {
         "id": 20,
-        "title": "Підкаст 20",
-        "description": "Опис підкасту 20",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Михайло Пастушак",
+        "description": "Було собі два брати: один бідний, а другий багатий.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/79070004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-24%2F301aeaed-cc41-71e1-b068-301b0dbe24c9.mp3",
         "image": "/src/image/podcast-foto20.jpg"
     },
     {
         "id": 21,
-        "title": "Підкаст 21",
-        "description": "Опис підкасту 21",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Мистецтво Незкорених",
+        "description": "Всеукраїнська Спілка Автоматизаторів Бізнесу та Благодійний фонд 'Коло' запрошують долучитись до благодійного проекту 'Мистецтво Нескорених'.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/24430365/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-26%2Fa69fdcb4-4133-fdfc-923e-a553d87c4c62.mp3",
         "image": "/src/image/podcast-foto21.jpg"
     },
     {
         "id": 22,
-        "title": "Підкаст 22",
-        "description": "Опис підкасту 22",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Дрогобич інфо",
+        "description": "На Дрогобиччині за 4,4 млн грн укріплять берег річки, яка спричинила масштабний паводок у Східниці.",
+        "audioUrl": "https://static.hromadske.radio/2023/10/hr_marafon_v-2023-10-05_kovalev1.mp3",
         "image": "/src/image/podcast-foto22.jpg"
     },
     {
         "id": 23,
-        "title": "Підкаст 23",
-        "description": "Опис підкасту 23",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Марта Мищатин",
+        "description": "Колись на Верховині жили троє братів: Петро, Микола й Іван. Були вони такі бідні, що крім живої душі нічого не мали.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/24430365/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-26%2Fa69fdcb4-4133-fdfc-923e-a553d87c4c62.mp3",
         "image": "/src/image/podcast-foto23.jpg"
     },
     {
         "id": 24,
-        "title": "Підкаст 24",
-        "description": "Опис підкасту 24",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Надія Кіндратів",
+        "description": "Ішли собі десь розум та щастя та й засперечались, Розум каже, що він сильніший, а щастя — що воно. Сперечались вони, сперечались та й розійшлись.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/21571060/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-24%2F40ee4156-0571-dee0-9a4c-937655172185.mp3",
         "image": "/src/image/podcast-foto24.jpg"
     },
     {
         "id": 25,
-        "title": "Підкаст 25",
-        "description": "Опис підкасту 25",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Діана Корінець",
+        "description": "В одному селі жив сирота Іванко. Як умирали його тато й мама, то лишили йому стару хатку і городу латку.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20859561/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-9%2Ff23038ea-a790-a6c8-ec28-ab4bf3fd04d3.mp3",
         "image": "/src/image/podcast-foto25.jpg"
     },
     {
         "id": 26,
-        "title": "Підкаст 26",
-        "description": "Опис підкасту 26",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Олег Стецюк",
+        "description": "Унадивсь колись давним-давно один страшний змій десь у якусь слободу людей їсти та й виїв чисто всіх, зостався один тільки дід.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/79070004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-24%2F301aeaed-cc41-71e1-b068-301b0dbe24c9.mp3",
         "image": "/src/image/podcast-foto26.jpg"
     },
     {
         "id": 27,
-        "title": "Підкаст 27",
-        "description": "Опис підкасту 27",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Данило Ільницький",
+        "description": "Був один цар і мав трьох синів. Два були розумні, а один дурний. Той цар був уже в глибокій старості. Однієї ночі мав він красний сон: снилося йому, що є така вода, коли вмитися нею, то можна стати молодим.",
+        "audioUrl": "https://radiozapad.net/hosts/unt/1204.mp3",
         "image": "/src/image/podcast-foto27.jpg"
     },
     {
         "id": 28,
-        "title": "Підкаст 28",
-        "description": "Опис підкасту 28",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Юрій Юрчак",
+        "description": "Один чоловік піймав соловейка і хотів його з'їсти. Але пташок каже до нього:— Ні, ти мною не наїсися, чоловіче; краще пусти мене, і я тебе навчу трьох речей, які тобі у великій пригоді стануть.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/79070004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-24%2F301aeaed-cc41-71e1-b068-301b0dbe24c9.mp3",
         "image": "/src/image/podcast-foto17.jpg"
     },
     {
         "id": 29,
-        "title": "Підкаст 29",
-        "description": "Опис підкасту 29",
-        "audioUrl": "https://example.com/podcast2.mp3",
-        "image": "/src/image/podcast-foto29.jpg"
+        "title": "Василь Ґабор",
+        "description": "Унадивсь колись давним-давно один страшний змій десь у якусь слободу людей їсти та й виїв чисто всіх, зостався один тільки дід.",
+        "audioUrl": "https://static.hromadske.radio/2023/10/hr_marafon_v-2023-10-05_kovalev1.mp3",
+        "image": "/src/image/podcast-foto12.jpg"
     },
     {
         "id": 30,
-        "title": "Підкаст 30",
-        "description": "Опис підкасту 30",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Віктор Винник",
+        "description": "Був собі один чоловік, мав шестеро синів та одну дочку. Пішли вони в поле орати і наказали, щоб сестра винесла їм обід. Вона каже.",
+        "audioUrl": "https://radiozapad.net/hosts/unt/1203.mp3",
         "image": "/src/image/podcast-foto19.jpg"
     },
     {
         "id": 31,
-        "title": "Підкаст 31",
-        "description": "Опис підкасту 31",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Михайло Пастушак",
+        "description": "Був собі бідний чоловік, не мав звідки жити, бо не було в нього ні землі, ні худоби. Пішов якось він у ліс лико дерти. А чорт угледів.",
+        "audioUrl": "https://radiozapad.net/hosts/unt/1202.mp3",
         "image": "/src/image/podcast-foto20.jpg"
     },
     {
         "id": 32,
-        "title": "Підкаст 32",
-        "description": "Опис підкасту 32",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Мистецтво Незкорених",
+        "description": "Всеукраїнська Спілка Автоматизаторів Бізнесу та Благодійний фонд 'Коло' запрошують долучитись до благодійного проекту 'Мистецтво Нескорених'.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20193117/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-8-26%2F7cb54810-66d2-e3c3-af26-af433ea46aea.mp3",
         "image": "/src/image/podcast-foto21.jpg"
     },
     {
         "id": 33,
-        "title": "Підкаст 33",
-        "description": "Опис підкасту 33",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Дрогобич інфо",
+        "description": "На Дрогобиччині за 4,4 млн грн укріплять берег річки, яка спричинила масштабний паводок у Східниці.",
+        "audioUrl": "https://static.hromadske.radio/2023/10/hr_marafon_v-2023-10-05_kovalev1.mp3",
         "image": "/src/image/podcast-foto22.jpg"
     },
     {
         "id": 34,
-        "title": "Підкаст 34",
-        "description": "Опис підкасту 34",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Марта Мищатин",
+        "description": "Були собі дід та баба та дожились уже до того, що й хліба нема. Дід і просить: — Бабусю! Спекла б ти колобок!— Та з чого ж я спечу, як і борошна нема?  — От, бабусю, піди в хижку та назмітай у засіку борошенця, то й буде колобок.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20531414/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-9-2%2Fd0b97620-7990-3a44-6268-48ed4eeab5aa.mp3",
         "image": "/src/image/podcast-foto23.jpg"
     },
     {
         "id": 35,
-        "title": "Підкаст 35",
-        "description": "Опис підкасту 35",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Леся Татарська",
+        "description": "Було у одного царя три сини — два розумних, а третій дурень. От прийшли вони до батька до свого та й просять, щоб він відпустив їх поїздити по світу, подивитися на інші царства. ",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/24430365/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-11-26%2Fa69fdcb4-4133-fdfc-923e-a553d87c4c62.mp3",
         "image": "/src/image/podcast-foto13.jpg"
     },
     {
         "id": 36,
-        "title": "Підкаст 36",
-        "description": "Опис підкасту 36",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Михайло Сікора",
+        "description": "Раз був, де не був, у тій землі, де уже край світу, один чоловік: бідненький, худобненький, як церковна миша.",
+        "audioUrl": "https://pstatic.nv.ua/podcast/audio/272/27225.mp3",
         "image": "/src/image/podcast-foto14.jpg"
     },
     {
         "id": 37,
-        "title": "Підкаст 37",
-        "description": "Опис підкасту 37",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Програма вітань",
+        "description": "Програма вітань 'Від серця до серця' №7 15/05/2022 Володимир Чуба - іменинник.",
+        "audioUrl": "https://radiozapad.net/hosts/unt/1205.mp3",
         "image": "/src/image/podcast-foto15.jpg"
     },
     {
         "id": 38,
-        "title": "Підкаст 38",
-        "description": "Опис підкасту 38",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Дара Корній",
+        "description": "В одного чоловіка був кіт старий, що вже не здужав і мишей ловити. От хазяїн його взяв та й вивіз у ліс, думає: «Нащо він мені здався, тільки дурно буду годувати,— нехай лучче в лісі ходить».",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/20193117/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-8-26%2F7cb54810-66d2-e3c3-af26-af433ea46aea.mp3",
         "image": "/src/image/podcast-foto16.jpg"
     },
     {
         "id": 39,
-        "title": "Підкаст 39",
-        "description": "Опис підкасту 39",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Юрій Юрчак",
+        "description": "Зосталося три брати сиротами — ні батька, ні неньки. І дома нема нічого — ні хазяйства, ні хати. Ото й пішли вони всі втрьох найматися. Аж іде дід старий-старий, борода біла.",
+        "audioUrl": "https://anchor.fm/s/89f5c40c/podcast/play/79070004/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-24%2F301aeaed-cc41-71e1-b068-301b0dbe24c9.mp3",
         "image": "/src/image/podcast-foto17.jpg"
     },
     {
         "id": 40,
-        "title": "Підкаст 40",
-        "description": "Опис підкасту 40",
-        "audioUrl": "https://example.com/podcast2.mp3",
+        "title": "Nica Nicaleo" ,
+        "description": "Був у багатого Мужика Гаврила пес Рябко. Узяв той пес та й здох. Ну, мужик хоче його поховати, як християнина, бо пес йому добре служив.",
+        "audioUrl": "https://anchor.fm/s/34f94c30/podcast/play/19106028/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2020-8-5%2F579984b3-fd2f-2644-30b3-cf21cabbb386.mp3",
         "image": "/src/image/podcast-foto18.jpg"
     }
 ]

@@ -4,12 +4,10 @@
     align-items: center;
     position: relative;
 
-    &__container {
-        margin-top: 40px;
-    }
 
     &__present {
         position: relative;
+        margin-top: 40px;
 
         h1 {
             font-size: clamp(33px, 7vw, 58px);
@@ -133,13 +131,14 @@
             right: -34%;
             bottom: -15%;
         }
+
         &__portret {
 
             &:nth-child(-n + 4) {
                 margin-bottom: 0px;
             }
         }
-        
+
     }
 
     @media (max-width:650px) {
@@ -176,5 +175,10 @@
 
     }
 
+    @media (max-width:615px) {
+        &__present {
+            margin-top: 25px;
+        }
 
+    }
 }

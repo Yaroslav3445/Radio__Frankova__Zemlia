@@ -111,16 +111,16 @@
         }
 
         &__tab {
-            position: relative;
             display: flex;
             flex-direction: column;
+            position: relative;
             cursor: pointer;
-            height: 15px;
+            height: fit-content;
             width: 30px;
 
             span {
-                position: absolute;
-                gap: 5px;
+                display: flex;
+                margin-top: 5px;
             }
         }
 

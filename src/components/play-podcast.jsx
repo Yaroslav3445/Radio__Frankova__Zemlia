@@ -35,13 +35,14 @@ const PlayPodcast = () => {
         }
     };
     const handlePause = () => {
-        setPause(!pause)
-        if (pause) {
-            audioRef.current.pause()
-        } else {
-            audioRef.current.play()
+        if (audioRef.current) {
+            if (audioRef.current.paused) {
+                audioRef.current.play();
+            } else {
+                audioRef.current.pause();
+            }
         }
-    }
+    };
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.volume = volume / 100;
@@ -77,7 +78,7 @@ const PlayPodcast = () => {
                         <h1>{currentPodcastData.title}</h1>
                         <p>{currentPodcastData.description}</p>
                         <div className={PlayPodcastStyles.listen__player}>
-                            <Link to={`/play-podcast/${prevPodcastId}`} state={{ podcastData: podcastData[prevPodcastIndex] }}>
+                            <Link to={`/play-podcast/${prevPodcastId}`} onClick={handlePause} state={{ podcastData: podcastData[prevPodcastIndex] }}>
                                 <button type="button">
                                     <img src={musicClick} alt="music" />
                                 </button>

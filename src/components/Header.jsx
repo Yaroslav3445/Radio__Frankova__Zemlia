@@ -9,13 +9,12 @@ const Header = () => {
         setTab(!tab);
     };
     const animation = {
-        position: tab === false ? '' : '40%',
-        // transform: tab === false ? '' : 'rotate(-45deg)',
-        transition: ' transform 1.3s'
+        transform: tab === false ? '' : 'rotate(45deg) translateY(5px)   translateX(5px)',
+        transition: ' transform 0.5s'
     }
     const animation2 = {
-        // transform: tab === false ? '' : 'rotate(60deg)',
-        transition: ' transform 1.3s'
+        transform: tab === false ? '' : 'rotate(-45deg) translateY(-5px)  translateX(4px)',
+        transition: ' transform 0.5s'
     }
     useEffect(() => {
         const handleResize = () => {
@@ -41,9 +40,9 @@ const Header = () => {
                                 <img src={logo} alt="Logo" />
                             </div>
                             <div onClick={toggleMenu} className={headerStyles['header__tab']}>
-                                <span style={animation}></span>
-                                <span  style={animation}></span>
-                                <span  style={animation2}></span>
+                                <span className={headerStyles['header__burger1']} style={animation}></span>
+                                <span className={headerStyles['header__burger2']}></span>
+                                <span className={headerStyles['header__burger3']} style={animation2}></span>
                             </div>
                             <ul className={`${headerStyles['header__ul']} ${tab ? headerStyles['header__active'] : ''}`} >
                                 <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Головна</li></Link>
@@ -55,7 +54,7 @@ const Header = () => {
                             </ul>
                         </div>
                         <div className={headerStyles['header__button-wrap']}>
-                            <button className={headerStyles['header__button']}>Підтримати</button>
+                            <Link to='https://prytulafoundation.org/donation'><button className={headerStyles['header__button']}>Підтримати</button></Link>
                         </div>
                     </nav>
                 </div >

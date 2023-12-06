@@ -6,7 +6,9 @@ import { Schedule } from "../components/Schedule";
 
 
 const Pageshedule = ({ onDataUpdate }) => {
-  const weekDays = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+  var daysOfWeek = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
+
+  const weekDays = [''].concat(daysOfWeek);
   const [activeDay, setActiveDay] = useState('');
 
   const handleDayClick = (day) => {
@@ -20,7 +22,7 @@ const Pageshedule = ({ onDataUpdate }) => {
     setActiveDay(weekDays[currentDayIndex]);
 
     if (typeof onDataUpdate === 'function') {
-      onDataUpdate({ data: DataWeek, weekDays, activeDay: weekDays[currentDayIndex] });
+      onDataUpdate({ data: DataWeek, weekDays, activeDay: weekDays[currentDayIndex]});
     }
   }, []); 
 
@@ -34,7 +36,7 @@ const Pageshedule = ({ onDataUpdate }) => {
     <>
         <HeadShedule />
         <ul className={pageSheduleStyles.week}>
-          {weekDays.map((day, index) => (
+          {weekDays.slice(1).map((day, index) => (
             <li key={index}>
               <button
                 onClick={() => handleDayClick(day)}

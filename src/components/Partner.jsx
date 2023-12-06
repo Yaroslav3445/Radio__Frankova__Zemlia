@@ -9,11 +9,9 @@ import "swiper/scss/scrollbar";
 import "../style/reset.scss";
 import partnerStyles from "../style/partner.module.scss";
 import blueLine from "../image/blueLine.svg";
-import kuivstar from "../image/kuivstar3.png";
-import akkopd from "../image/akkopd.svg";
-import arrowPrew from "../image/arrow-prew.svg";
-import arrowNext from "../image/arrow-next.svg";
-import pyramid from "../image/pyramid.png";
+import akkopd from "../image/akkopd.png";
+import kuivstar from "../image/kuivstar.svg"
+;
 
 const Partner = () => {
   const pagination = {
@@ -56,40 +54,40 @@ const Partner = () => {
               }}
             >
               <SwiperSlide>
-                <img src={akkopd} alt="Kuivstar" />
+              <img src={kuivstar} alt="Kuivstar" />
+              </SwiperSlide>
+              <SwiperSlide>
+              <img src={akkopd} alt="Akkopd" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={kuivstar} alt="Kuivstar" />
+              </SwiperSlide>
+              <SwiperSlide>
+              <img src={akkopd} alt="Akkopd" />
+              </SwiperSlide>
+              <SwiperSlide>
+              <img src={kuivstar} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Kuivstar" />
+                <img src={kuivstar} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Kuivstar" />
+                <img src={kuivstar} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={akkopd} alt="Akkopd" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Kuivstar" />
+                <img src={kuivstar} alt="Kuivstar" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Akkopd" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={akkopd} alt="Kuivstar" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={akkopd} alt="Akkopd" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={akkopd} alt="Kuivstar" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={akkopd} alt="Akkopd" />
+                <img src={akkopd} alt="akkopd" />
               </SwiperSlide>
             </Swiper>
           </div>
