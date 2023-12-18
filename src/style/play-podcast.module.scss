@@ -53,6 +53,7 @@
 
     &__player {
         width: 285px;
+        height: 140px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -62,6 +63,36 @@
     &__goPodcast {
         transform: rotate(180deg);
     }
+
+    &__progress {
+        position: absolute;
+        bottom: -5%;
+        width: 290px;
+        height: 6px;
+        background-color: #f4f2f2;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    &__progressBar {
+        height: 3px;
+        background-color: #6d49f1;
+        border-radius: 30px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        
+    }
+
+    &__progressTrack {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: #F1DB49;
+    }
+
 
     &__play {
         padding: 13px 13px;
@@ -134,7 +165,7 @@
         &__knot {
             img {
                 width: 131px;
-                height: 131px;  
+                height: 131px;
             }
         }
     }
@@ -144,7 +175,9 @@ input {
     width: 100%;
 }
 
+
 input[type="range"] {
+    appearance: none;
 
     &::-webkit-slider-runnable-track {
         background: linear-gradient(to right, #F1DB49, #F1DB49);

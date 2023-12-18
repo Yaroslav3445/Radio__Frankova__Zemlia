@@ -16,9 +16,8 @@ const PlayPodcast = () => {
     const audioRef = useRef(null);
     const restoreVolume = useRef(100)
     const [isExpanded, setIsExpanded] = useState(false);
-
+    const [progress, setProgress] = useState(0);
     const { podcastData: currentPodcastData } = location.state || {};
-
     const currentPodcastIndex = podcastData.findIndex((podcast) => podcast.id === parseInt(id, 10));
     const nextPodcastIndex = (currentPodcastIndex + 1) % podcastData.length;
     const prevPodcastIndex = (currentPodcastIndex - 1 + podcastData.length) % podcastData.length;
@@ -46,9 +45,23 @@ const PlayPodcast = () => {
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.volume = volume / 100;
+            audioRef.current.addEventListener('timeupdate', updateProgressBar);
         }
-    }, [volume]);
 
+        return () => {
+            if (audioRef.current) {
+                audioRef.current.removeEventListener('timeupdate', updateProgressBar);
+            }
+        };
+    }, [volume]);
+    const updateProgressBar = () => {
+        if (audioRef.current) {
+            const currentTime = audioRef.current.currentTime;
+            const duration = audioRef.current.duration;
+            const progress = (currentTime / duration) * 100;
+            setProgress(progress);
+        }
+    }
     const clikVolume = () => {
         if (audioRef.current) {
             setIsExpanded(!isExpanded)
@@ -67,6 +80,38 @@ const PlayPodcast = () => {
         width: isExpanded ? '25px' : '0px',
         height: isExpanded ? '2px' : '0px',
     };
+
+
+
+    const seekTo = (percentage) => {
+        if (audioRef.current) {
+            if (audioRef.current.readyState >= 2) {
+                const duration = audioRef.current.duration;
+
+                if (!Number.isFinite(duration) || isNaN(duration)) {
+                    console.error("Invalid audio duration:", duration);
+                    return;
+                }
+
+                const newTime = (percentage / 100) * duration;
+
+                if (!Number.isFinite(newTime)) {
+                    console.error("Invalid newTime:", newTime);
+                    return;
+                }
+
+                // Вивід попередження, якщо аудіо не повністю завантажено
+                if (audioRef.current.readyState < 3) {
+                    console.warn("Audio is not fully loaded yet.");
+                }
+
+                audioRef.current.load();
+                audioRef.current.currentTime = newTime;
+            } else {
+                console.warn("Audio is not fully loaded yet.");
+            }
+        }
+    }
     return (
         <>
             <section>
@@ -88,8 +133,15 @@ const PlayPodcast = () => {
                                 src={currentPodcastData.audioUrl}
                                 volume={volume / 100}
                                 className={`${PlayPodcastStyles['listen__audio']}`}
-                                controlsList="nodownload nofullscreen"
                             ></audio>
+                            <div className={PlayPodcastStyles.listen__progress} onClick={(e) => {
+                                const rect = e.currentTarget.getBoundingClientRect();
+                                const offsetX = e.clientX - rect.left;
+                                const percentage = (offsetX / rect.width) * 100;
+                                seekTo(percentage);
+                            }} >
+                                <div className={PlayPodcastStyles.listen__progressBar} style={{ width: `${progress}%` }} ><span className={PlayPodcastStyles.listen__progressTrack}></span></div>
+                            </div>
                             <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button"><img src={play} alt="play" /></button>
                             <Link to={`/play-podcast/${nextPodcastId}`} state={{ podcastData: podcastData[nextPodcastIndex] }}>
                                 <button className={PlayPodcastStyles.listen__goPodcast} type="button">
