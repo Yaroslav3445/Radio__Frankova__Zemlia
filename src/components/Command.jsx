@@ -10,7 +10,7 @@ const Command = ({ itemsToShow }) => {
     return (
         <section>
             <div className={commandStyles.command}>
-                    <div className={commandStyles['command__present']}>
+                <div className={commandStyles['command__present']}>
                     <h1>Наша команда</h1>
                     <img className={commandStyles['command__yellowLine']} src={yellowLine} alt="Yellow Line" />
                 </div>

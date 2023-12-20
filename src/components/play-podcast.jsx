@@ -12,18 +12,20 @@ const PlayPodcast = () => {
     const { id } = useParams();
     const location = useLocation();
     const [volume, setVolume] = useState(100);
-    const [pause, setPause] = useState(false)
     const audioRef = useRef(null);
-    const restoreVolume = useRef(100)
+    const restoreVolume = useRef(100);
     const [isExpanded, setIsExpanded] = useState(false);
     const [progress, setProgress] = useState(0);
     const { podcastData: currentPodcastData } = location.state || {};
     const currentPodcastIndex = podcastData.findIndex((podcast) => podcast.id === parseInt(id, 10));
     const nextPodcastIndex = (currentPodcastIndex + 1) % podcastData.length;
     const prevPodcastIndex = (currentPodcastIndex - 1 + podcastData.length) % podcastData.length;
+    const [loading, setLoading] = useState(false);
 
     const nextPodcastId = podcastData[nextPodcastIndex].id;
     const prevPodcastId = podcastData[prevPodcastIndex].id;
+    const [currentTime, setCurrentTime] = useState(0);
+    const [duration, setDuration] = useState(0);
 
     const volumeMove = (event) => {
         const newVolume = parseFloat(event.target.value);
@@ -33,6 +35,7 @@ const PlayPodcast = () => {
             audioRef.current.volume = newVolume / 100;
         }
     };
+
     const handlePause = () => {
         if (audioRef.current) {
             if (audioRef.current.paused) {
@@ -42,35 +45,57 @@ const PlayPodcast = () => {
             }
         }
     };
+
     useEffect(() => {
+        const handleLoadedMetadata = () => {
+            setDuration(audioRef.current.duration);
+        };
+
+        const handleTimeUpdate = () => {
+            setCurrentTime(audioRef.current.currentTime);
+        };
+
         if (audioRef.current) {
-            audioRef.current.volume = volume / 100;
-            audioRef.current.addEventListener('timeupdate', updateProgressBar);
+            audioRef.current.addEventListener("loadedmetadata", handleLoadedMetadata);
+            audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
         }
 
         return () => {
             if (audioRef.current) {
-                audioRef.current.removeEventListener('timeupdate', updateProgressBar);
+                audioRef.current.removeEventListener("loadedmetadata", handleLoadedMetadata);
+                audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
             }
         };
-    }, [volume]);
+    }, [audioRef]);
+
+    const formatTime = (time) => {
+        const hours = Math.floor(time / 3600);
+        const minutes = Math.floor((time % 3600) / 60);
+        const seconds = Math.floor(time % 60);
+        const formattedHours = String(hours).padStart(2, '0');
+        const formattedMinutes = String(minutes).padStart(2, '0');
+        const formattedSeconds = String(seconds).padStart(2, '0');
+
+        return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+    };
+
     const updateProgressBar = () => {
-        if (audioRef.current) {
+        if (audioRef.current && audioRef.current.readyState >= 2) {
             const currentTime = audioRef.current.currentTime;
             const duration = audioRef.current.duration;
             const progress = (currentTime / duration) * 100;
             setProgress(progress);
         }
-    }
+    };
+
     const clikVolume = () => {
         if (audioRef.current) {
-            setIsExpanded(!isExpanded)
+            setIsExpanded(!isExpanded);
             if (volume === 0) {
-                setVolume(restoreVolume.current)
+                setVolume(restoreVolume.current);
             } else {
-                restoreVolume.current = volume
+                restoreVolume.current = volume;
                 setVolume(0);
-
             }
             audioRef.current.volume = volume / 100;
         }
@@ -81,37 +106,30 @@ const PlayPodcast = () => {
         height: isExpanded ? '2px' : '0px',
     };
 
-
-
     const seekTo = (percentage) => {
-        if (audioRef.current) {
-            if (audioRef.current.readyState >= 2) {
-                const duration = audioRef.current.duration;
-
-                if (!Number.isFinite(duration) || isNaN(duration)) {
-                    console.error("Invalid audio duration:", duration);
-                    return;
-                }
-
-                const newTime = (percentage / 100) * duration;
-
-                if (!Number.isFinite(newTime)) {
-                    console.error("Invalid newTime:", newTime);
-                    return;
-                }
-
-                // Вивід попередження, якщо аудіо не повністю завантажено
-                if (audioRef.current.readyState < 3) {
-                    console.warn("Audio is not fully loaded yet.");
-                }
-
-                audioRef.current.load();
-                audioRef.current.currentTime = newTime;
+        const seekTo = (percentage) => {
+            if (audioRef.current && audioRef.current.readyState >= 2) {
+              setLoading(true); 
+          
+              const newTime = (percentage / 100) * duration;
+          
+              if (!Number.isFinite(newTime) || isNaN(newTime)) {
+                console.error("Invalid newTime:", newTime);
+                return;
+              }
+          
+              audioRef.current.currentTime = newTime;
+          
+              audioRef.current.addEventListener("canplaythrough", () => {
+                setLoading(false);
+              }, { once: true });
             } else {
-                console.warn("Audio is not fully loaded yet.");
+              console.warn("Audio is not fully loaded yet.");
             }
-        }
-    }
+          };
+          
+    };
+
     return (
         <>
             <section>
@@ -128,20 +146,6 @@ const PlayPodcast = () => {
                                     <img src={musicClick} alt="music" />
                                 </button>
                             </Link>
-                            <audio
-                                ref={audioRef}
-                                src={currentPodcastData.audioUrl}
-                                volume={volume / 100}
-                                className={`${PlayPodcastStyles['listen__audio']}`}
-                            ></audio>
-                            <div className={PlayPodcastStyles.listen__progress} onClick={(e) => {
-                                const rect = e.currentTarget.getBoundingClientRect();
-                                const offsetX = e.clientX - rect.left;
-                                const percentage = (offsetX / rect.width) * 100;
-                                seekTo(percentage);
-                            }} >
-                                <div className={PlayPodcastStyles.listen__progressBar} style={{ width: `${progress}%` }} ><span className={PlayPodcastStyles.listen__progressTrack}></span></div>
-                            </div>
                             <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button"><img src={play} alt="play" /></button>
                             <Link to={`/play-podcast/${nextPodcastId}`} state={{ podcastData: podcastData[nextPodcastIndex] }}>
                                 <button className={PlayPodcastStyles.listen__goPodcast} type="button">
@@ -152,7 +156,7 @@ const PlayPodcast = () => {
                         <div className={PlayPodcastStyles.listen__volume}>
                             <div className={PlayPodcastStyles.listen__volumeBlock} onClick={clikVolume}>
                                 <img src={volumeBlock} alt="volume-block" />
-                                <span className={`${PlayPodcastStyles["listen__stop"]}`} style={spanStyle} ></span>
+                                <span className={`${PlayPodcastStyles["listen__stop"]}`} style={spanStyle}></span>
                             </div>
                             <input
                                 type="range"
@@ -164,12 +168,41 @@ const PlayPodcast = () => {
                                 className={PlayPodcastStyles.listen__sound}
                             />
                         </div>
+                        <audio
+                            ref={audioRef}
+                            src={currentPodcastData.audioUrl}
+                            volume={volume / 100}
+                            className={`${PlayPodcastStyles['listen__audio']}`}
+                        ></audio>
+                        <div className={PlayPodcastStyles.listen__progress}
+                             onClick={(e) => {
+                                const rect = e.currentTarget.getBoundingClientRect();
+                                const offsetX = e.clientX - rect.left;
+                                const percentage = (offsetX / rect.width) * 100;
+                                seekTo(percentage);
+                              }}>
+                            {loading ? (
+                                <div className={PlayPodcastStyles.listen__Indicator}>
+                                    завантаження
+                                    dhdfhfh
+                                    ghfgdhfgdhfgh
+                                    fgh
+                                    fghfdgh
+                                    fd
+                                    <h1>fghfdgh</h1>
+                                </div>
+                            ) : (
+                                <div className={PlayPodcastStyles.listen__progressBar} style={{ width: `${progress}%` }} ><span className={PlayPodcastStyles.listen__progressTrack}></span>
+                                    <span>{formatTime(currentTime)} / {formatTime(duration)}</span>
+                                </div>
+                            )}
+                        </div>
+                        <div className={PlayPodcastStyles.listen__knot}><img src={knot} alt="knot" /></div>
                     </div>
-                    <div className={PlayPodcastStyles.listen__knot}><img src={knot} alt="knot" /></div>
                 </div>
             </section>
         </>
     );
 };
 
-export default PlayPodcast;
+export default PlayPodcast
