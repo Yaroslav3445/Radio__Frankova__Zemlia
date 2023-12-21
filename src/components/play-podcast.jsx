@@ -168,7 +168,7 @@ const handlePause = async () => {
                 <img src={volumeBlock} alt="volume-block" />
                 <span className={`${PlayPodcastStyles["listen__stop"]}`} style={spanStyle}></span>
               </div>
-              <input
+              <input вісім
                 type="range"
                 min={0}
                 max={100}
