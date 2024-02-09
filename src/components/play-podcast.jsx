@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation, useParams, Link } from 'react-router-dom';
 import PlayPodcastStyles from '../style/play-podcast.module.scss';
-import podcastData from '../data/podcast.json';
+import podcastData from '../info/podcast';
 import '../style/reset.scss';
 import play from '../image/play.svg';
 import musicClick from '../image/music-prev.svg';

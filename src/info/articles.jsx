@@ -1,4 +1,4 @@
-[
+const articles = [
     {
         "id": 1,
         "nameContent": "Мурали або стінописи сьогодні",
@@ -90,3 +90,5 @@
         "image": "/src/image/new15.jpeg"
     }
 ]
+
+export default articles

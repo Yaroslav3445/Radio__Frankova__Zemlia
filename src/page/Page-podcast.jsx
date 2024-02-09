@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PodcastList from '../components/PodcastList';
 import NamePage from '../components/NamePage';
 import PagePodcastStyle from '../style/podcastList.module.scss';
-import podcastData from '../data/podcast.json';
+import podcastData from '../info/podcast';
 import Pagination from '../components/pagination';
 import Thours from '../components/Thours-img';
 import Cube from '../components/Cube-img'

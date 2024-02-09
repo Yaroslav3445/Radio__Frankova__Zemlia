@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
 import footerStyles from '../style/footer.module.scss'
 import footer from '../image/footer.svg'
 import instagram from '../image/instagram.svg'

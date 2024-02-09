@@ -69,13 +69,8 @@
     &__link {
         text-decoration: none;
         cursor: pointer;
-        transition: color 0.3s ease;
+        transition:  0.3s ease;
         color: #fff;
-
-        &:hover {
-            color: #F1DB49
-        }
-
     }
 
     &__button-wrap {
@@ -142,6 +137,9 @@
             max-height: 300px;
 
         }
+        &__active-link{
+            color: #F1DB49;
+        }
 
         &__link {
             padding: 0px 0px 0px 20px;
@@ -191,6 +189,7 @@
 
         &__active {
             max-height: 250px;
+            color: #F1DB49;
         }
 
         &__menu {

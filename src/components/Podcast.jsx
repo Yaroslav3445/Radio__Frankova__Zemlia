@@ -2,7 +2,7 @@
 import React from 'react';
 import PodcastList from './PodcastList';
 import NamePage from '../components/NamePage';
-import podcastData from '../data/podcast.json';
+import podcastData from '../info/podcast';
 import PodcastStyle from '../style/podcast.module.scss'
 const Podcast = () => {
     return (

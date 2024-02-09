@@ -1,4 +1,4 @@
-[
+const podcast = [
     {
         "id": 1,
         "title": "Йосипа Фиштика",
@@ -280,3 +280,6 @@
         "image": "/src/image/podcast-foto18.jpg"
     }
 ]
+
+
+export default podcast

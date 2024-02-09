@@ -3,7 +3,7 @@ import pageNewsStyles from '../style/page-news.module.scss'
 import yellowLine from '../image/yellowLine.svg'
 import newsimage from '../image/newsImage.png'
 import arrow from '../image/arrow.svg'
-import articles from '../data/articles.json'
+import articles from '../info/articles'
 import Pagination from '../components/pagination';
 import knot from '../image/Knot.png'
 import thorus from '../image/thorus.png'

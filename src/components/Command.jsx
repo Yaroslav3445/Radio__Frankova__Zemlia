@@ -4,7 +4,7 @@ import '../style/reset.scss'
 import commandStyles from '../style/command.module.scss'
 import helix from '../image/helix.png'
 import yellowLine from '../image/yellowLine.svg'
-import command from '../data/command.json'
+import command from '../info/team'
 const Command = ({ itemsToShow }) => {
     const title = 'Наша Команда'
     return (

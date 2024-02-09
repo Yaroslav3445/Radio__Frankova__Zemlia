@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import pageSheduleStyles from "../style/page-shedule.module.scss";
-import DataWeek from "../data/data.json";
+import DataWeek from "../info/data";
 import { HeadShedule } from "../components/Schedule";
 import { Schedule } from "../components/Schedule";
 

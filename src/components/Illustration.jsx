@@ -12,11 +12,13 @@ const Illustration = () => {
                     <div className={illustrationStyles.illustration__wrapper}>
                         <div className={illustrationStyles.illustration__ether}>
                             <div className={illustrationStyles.illustration__button}>
+                                <a href="https://www.radio-ua.com/?gclid=CjwKCAiAt5euBhB9EiwAdkXWOzPFHEEST2foQTpmbmX4FFFZ5QrA_Xthq5ZuqJ1bQfnzL9S4IASF5xoCRjMQAvD_BwE">
                                 <div className={illustrationStyles.illustration__triangle}></div>
                                 <div className={illustrationStyles.illustration__info}>
                                     <span className={`${illustrationStyles['illustration__text-big']}`}>БЛа бла бал</span>
                                     <span className={illustrationStyles.illustration__text}>Зараз в ефірі</span>
                                 </div>
+                                </a>
                             </div>
                             <div className={illustrationStyles.illustration__bus}><img src={bus} alt="Bus" /></div>
                         </div>

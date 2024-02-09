@@ -1,9 +1,9 @@
-import { Link, } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 import headerStyles from '../style/header.module.scss'
 import logo from '../image/logo.png'
 const Header = () => {
-
+    const location = useLocation();
     const [tab, setTab] = useState(false);
     const toggleMenu = () => {
         setTab(!tab);
@@ -45,16 +45,16 @@ const Header = () => {
                                 <span className={headerStyles['header__burger3']} style={animation2}></span>
                             </div>
                             <ul className={`${headerStyles['header__ul']} ${tab ? headerStyles['header__active'] : ''}`} >
-                                <Link onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Головна</li></Link>
-                                <Link onClick={toggleMenu} to='/Page-news' className={headerStyles.header__link}><li>Новини</li></Link>
-                                <Link onClick={toggleMenu} to='/Page-info' className={headerStyles.header__link}><li>Про нас</li></Link>
-                                <Link onClick={toggleMenu} to='/Page-shedule' className={headerStyles.header__link}><li>Розклад</li></Link>
-                                <Link onClick={toggleMenu} to='/Page-Command' className={headerStyles.header__link}><li>Команда</li></Link>
-                                <Link onClick={toggleMenu} to='/Page-podcast' className={headerStyles.header__link}><li>Подкасти</li></Link>
+                            <NavLink style={location.pathname === '/MainPage' ? { color: 'yellow' } : {}} onClick={toggleMenu} to='/MainPage' className={headerStyles.header__link}><li>Головна</li></NavLink>
+                            <NavLink style={location.pathname === '/Page-news' ? { color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-news' className={headerStyles.header__link}><li>Новини</li></NavLink>
+                            <NavLink style={location.pathname === '/Page-info' ? { color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-info' className={headerStyles.header__link}><li>Про нас</li></NavLink>
+                            <NavLink style={location.pathname === '/Page-shedule' ? { color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-shedule' className={headerStyles.header__link}><li>Розклад</li></NavLink>
+                            <NavLink style={location.pathname === '/Page-Command' ? { color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-Command' className={headerStyles.header__link}><li>Команда</li></NavLink>
+                            <NavLink style={location.pathname === '/Page-podcast' ? {    color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-podcast' className={headerStyles.header__link}><li>Подкасти</li></NavLink>
                             </ul>
                         </div>
                         <div className={headerStyles['header__button-wrap']}>
-                            <Link to='https://prytulafoundation.org/donation'><button className={headerStyles['header__button']}>Підтримати</button></Link>
+                            <NavLink to='https://prytulafoundation.org/donation'><button className={headerStyles['header__button']}>Підтримати</button></NavLink>
                         </div>
                     </nav>
                 </div >

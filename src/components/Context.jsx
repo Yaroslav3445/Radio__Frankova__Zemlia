@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import Data from '../data/data.json'
+import Data from '../info/data'
 export const Contextfol = createContext()
 
 

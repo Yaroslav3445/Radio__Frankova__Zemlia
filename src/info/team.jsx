@@ -1,4 +1,4 @@
-[
+const team = [
     {
         "id": 1,
         "name": "Марія Іваненко",
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Єва Рильска",
         "jobTitle": "Журналіст",
-        "portfolio": "",
+        "portfolio": "Журналіст",
         "personalInfo": "Журналістика — це мистецтво дізнатися правду, навчитися розповідати історії і впливати на громадську думку. ",
         "image": "/src/image/command-portret2.png"
     },
@@ -64,3 +64,6 @@
         "image": "/src/image/command-portret4.png"
     }
 ]
+
+
+export default team
