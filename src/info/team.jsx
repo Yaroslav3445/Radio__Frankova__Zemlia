@@ -1,3 +1,10 @@
+import team1Image from '../image/command-portret1.png';
+import team2Image from '../image/command-portret2.png';
+import team3Image from '../image/command-portret3.png';
+import team4Image from '../image/command-portret4.png';
+
+
+
 const team = [
     {
         "id": 1,
@@ -5,7 +12,7 @@ const team = [
         "jobTitle": "Ведуча",
         "portfolio": "Співавторка подкасту - Франкова земля",
         "personalInfo": "Доброго дня, шановні глядачі! Мене звуть Катя Іваненко, і я вітаю вас у своєму веселому і захоплюючому світі! Сьогодні я хочу розповісти вам трошки більше про себе, щоб ви краще мене пізнали.",
-        "image": "/src/image/command-portret1.png"
+        "image": team1Image
     },
     {
         "id": 2,
@@ -13,7 +20,7 @@ const team = [
         "jobTitle": "Журналіст",
         "portfolio": "Журналіст",
         "personalInfo": "Журналістика — це мистецтво дізнатися правду, навчитися розповідати історії і впливати на громадську думку. ",
-        "image": "/src/image/command-portret2.png"
+        "image": team2Image
     },
     {
         "id": 3,
@@ -21,7 +28,7 @@ const team = [
         "jobTitle": "Редактор",
         "portfolio": "Редактор - Франкова земля",
         "personalInfo": "Редагування — це тонке мистецтво, де кожне слово, кожен рядок, має значення. Моя робота як редактора — це не просто виправлення граматичних помилок, але й створення тексту, що лунає ефективно.",
-        "image": "/src/image/command-portret3.png"
+        "image": team3Image
     },
     {
         "id": 4,
@@ -29,7 +36,7 @@ const team = [
         "jobTitle": "Ведучий",
         "portfolio": "Співавтор подкасту - Франкова земля",
         "personalInfo": "Моє захоплення комунікацією та історіями почалося ще у шкільні роки, коли я виявив свою вроджену любов до слів та виразного мовлення.",
-        "image": "/src/image/command-portret4.png"
+        "image": team4Image
     },
     {
         "id": 5,
@@ -37,7 +44,7 @@ const team = [
         "jobTitle": "Ведуча",
         "portfolio": "Ведуча Радіо Франкова Земля",
         "personalInfo": "Моя пригода із світом ефіру почалася не так давно, але вже стала неймовірним відкриттям.",
-        "image": "/src/image/command-portret1.png"
+        "image": team1Image
     },
     {
         "id": 6,
@@ -45,7 +52,7 @@ const team = [
         "jobTitle": "веб-дизайнер",
         "portfolio": "Дизайнер сайту Радіо Франкова Земля",
         "personalInfo": "Вебдизайнер — це справжній митець у цифровому світі. Він чарівно комбінує кольори, форми та тексти, створюючи візуальний ефект, який залишає вас захопленими. ",
-        "image": "/src/image/command-portret2.png"
+        "image": team2Image
     },
     {
         "id": 7,
@@ -53,7 +60,7 @@ const team = [
         "jobTitle": "веб-розробник",
         "portfolio": "Розробник сайту Радіо Франкова Земля",
         "personalInfo": "Веб розробник — це справжній архітектор цифрового світу. Його завдання — перетворити креативні ідеї вебдизайнера в функціональні та ефективні веб-сайти.",
-        "image": "/src/image/command-portret3.png"
+        "image": team3Image
     },
     {
         "id": 8,
@@ -61,7 +68,7 @@ const team = [
         "jobTitle": "Продюсер",
         "personalInfo": "Продюсер Радіо Франкова Земля",
         "portfolio": "Продюсер — це справжній організатор, майстер стратегії та водій енергії в світі розваг та творчості.",
-        "image": "/src/image/command-portret4.png"
+        "image": team4Image
     }
 ]
 

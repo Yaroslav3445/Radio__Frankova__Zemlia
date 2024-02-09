@@ -58,6 +58,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-top: 15px;
     }
 
     &__goPodcast {
@@ -65,15 +66,16 @@
     }
 
     &__progress {
-        position: absolute;
-        bottom: -2%;
-        width: 290px;
+        position: relative;
+        bottom: 0;
+        width: 270px;
         height: 6px;
         background-color: #f4f2f2;
         display: flex;
         align-items: center;
         border-radius: 30px;
         cursor: pointer;
+        margin-top: 25px;
     }
 
 
@@ -81,7 +83,6 @@
         height: 3px;
         background-color: rgba(129, 119, 119, 0.5);
         position: absolute;
-        
     }
 
     &__indicator {
@@ -113,6 +114,7 @@
     }
 
     &__progressTrack {
+        top: -4px;
         width: 11px;
         height: 11px;
         border-radius: 50%;
@@ -126,6 +128,10 @@
         padding: 13px 13px;
         transition: background-color 0.3s;
         border-radius: 20px;
+
+        svg {
+            font-size: 75px;
+        }
 
         &:active {
             background-color: rgba(0, 0, 0, 0.040);

@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation, useParams, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import PlayPodcastStyles from '../style/play-podcast.module.scss';
 import podcastData from '../info/podcast';
 import '../style/reset.scss';
@@ -9,6 +11,7 @@ import volumeBlock from '../image/volume-block.svg';
 import knot from '../image/Knot.png';
 
 const PlayPodcast = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const { id } = useParams();
   const location = useLocation();
   const [volume, setVolume] = useState(100);
@@ -35,41 +38,31 @@ const PlayPodcast = () => {
     }
   };
 
-const handlePause = async () => {
-  if (audioRef.current) {
-    try {
-      if (audioRef.current.paused) {
-        await audioRef.current.play();
-        setIsPlaying(true);
-      } else {
-        audioRef.current.pause();
-        setIsPlaying(false);
+  const handlePause = async () => {
+    if (audioRef.current) {
+      try {
+        if (audioRef.current.paused) {
+          await audioRef.current.play();
+          setIsPlaying(true);
+        } else {
+          audioRef.current.pause();
+          setIsPlaying(false);
+        }
+      } catch (error) {
+        console.error("Failed to play/pause audio:", error);
       }
-    } catch (error) {
-      console.error("Failed to play/pause audio:", error);
     }
-  }
-};
-
-
+  };
   const updateProgressBar = () => {
     if (audioRef.current && audioRef.current.readyState >= 2) {
       const currentTime = audioRef.current.currentTime;
       const duration = audioRef.current.duration;
 
-      // Визначаємо індекс доступних діапазонів
       const ranges = audioRef.current.buffered;
       let index = -1;
 
-      // Знаходимо індекс діапазону, який включає поточний час
-      for (let i = 0; i < ranges.length; i++) {
-        if (currentTime >= ranges.start(i) && currentTime <= ranges.end(i)) {
-          index = i;
-          break;
-        }
-      }
 
-      // Використовуємо індекс тільки якщо він в межах доступних значень
+
       const buffered = index !== -1 ? (ranges.end(index) / duration) * 100 : 0;
 
       setBuffered(buffered);
@@ -155,7 +148,11 @@ const handlePause = async () => {
                 </button>
               </Link>
               <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button">
-                <img src={play} alt="play" />
+                {isPlaying ? (
+                  <FontAwesomeIcon icon={faPause} style={{ color: '#6867ab' }} />
+                ) : (
+                  <FontAwesomeIcon icon={faPlay} style={{ color: '#6867ab' }} />
+                )}
               </button>
               <Link to={`/play-podcast/${nextPodcastId}`} state={{ podcastData: podcastData[nextPodcastIndex] }}>
                 <button className={PlayPodcastStyles.listen__goPodcast} type="button">
@@ -168,7 +165,7 @@ const handlePause = async () => {
                 <img src={volumeBlock} alt="volume-block" />
                 <span className={`${PlayPodcastStyles["listen__stop"]}`} style={spanStyle}></span>
               </div>
-              <input вісім
+              <input
                 type="range"
                 min={0}
                 max={100}
@@ -186,16 +183,6 @@ const handlePause = async () => {
             ></audio>
             <div className={PlayPodcastStyles.listen__timerPlay}>
               <span>{formatTime(currentTime)} / {formatTime(duration)}</span>
-            </div>
-            <div className={PlayPodcastStyles.listen__progress} onClick={(e) => {
-              const rect = e.currentTarget.getBoundingClientRect();
-              const offsetX = e.clientX - rect.left;
-              const percentage = (offsetX / rect.width) * 100;
-              seekTo((percentage / 100) * duration);
-            }}>
-              <div className={PlayPodcastStyles.listen__progressBar} style={{ width: `${buffered}%` }}>
-                <span className={PlayPodcastStyles.listen__progressTrack}></span>
-              </div>
             </div>
             <div className={PlayPodcastStyles.listen__progress} onClick={(e) => {
               const rect = e.currentTarget.getBoundingClientRect();
