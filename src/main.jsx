@@ -7,7 +7,7 @@ import Context from './components/Context.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/Radio__Frankova__Zemlia/'>
       <Context>
         <App />
       </Context>
