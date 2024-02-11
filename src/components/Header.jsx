@@ -35,7 +35,6 @@ const Header = () => {
             <header className={headerStyles.header}>
                 <div className={headerStyles['header__container']}>
                     <nav className={headerStyles['header__menu']}>
-                        <div className={headerStyles['header__menu-wrap']}>
                             <div className={headerStyles['header__logo']}>
                                 <img src={logo} alt="Logo" />
                             </div>
@@ -52,7 +51,6 @@ const Header = () => {
                             <NavLink style={location.pathname === '/Page-Command' ? { color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-Command' className={headerStyles.header__link}><li>Команда</li></NavLink>
                             <NavLink style={location.pathname === '/Page-podcast' ? {    color: 'yellow' } : {}} onClick={toggleMenu} to='/Page-podcast' className={headerStyles.header__link}><li>Подкасти</li></NavLink>
                             </ul>
-                        </div>
                         <div className={headerStyles['header__button-wrap']}>
                             <NavLink to='https://prytulafoundation.org/donation'><button className={headerStyles['header__button']}>Підтримати</button></NavLink>
                         </div>

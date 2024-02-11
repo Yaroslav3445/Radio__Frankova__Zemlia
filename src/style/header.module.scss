@@ -22,7 +22,6 @@
         margin: 0px 10px 0px 10px;
     }
 
-    // .header__menu-wrap
 
     &__menu-wrap {
         width: 100%;
@@ -33,7 +32,6 @@
 
     }
 
-    // .header__logo
 
     &__logo {
         img {
@@ -42,7 +40,6 @@
         }
     }
 
-    // .header__ul
 
     &__ul {
         display: flex;
@@ -50,7 +47,6 @@
         gap: 41px;
     }
 
-    // .header__span
 
     &__tab {
         display: none;
@@ -62,19 +58,11 @@
         }
     }
 
-    // .header__li
-
-
-
     &__link {
         text-decoration: none;
         cursor: pointer;
-        transition:  0.3s ease;
+        transition: 0.3s ease;
         color: #fff;
-    }
-
-    &__button-wrap {
-        margin-left: 48px;
     }
 
     &__button {
@@ -95,7 +83,7 @@
         }
     }
 
-    @media(max-width:1000px) {
+    @media(max-width:1030px) {
 
         &__menu {
             width: 100%;
@@ -108,14 +96,22 @@
         &__tab {
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
             position: relative;
             cursor: pointer;
-            height: fit-content;
-            width: 30px;
+            height: 25px;
+            width: 40px;
+            border-radius: 10%;
+            transition: 0.1s ease;
 
-            span {
-                display: flex;
-                margin-top: 5px;
+
+            &:hover {
+                border: 3px solid #4DE5FF;
+            }
+
+            &:active {
+                background-color: rgba(255, 255, 255, 0.119);
             }
         }
 
@@ -137,7 +133,8 @@
             max-height: 300px;
 
         }
-        &__active-link{
+
+        &__active-link {
             color: #F1DB49;
         }
 
@@ -165,8 +162,12 @@
             margin: 0;
         }
 
+        &__logo {
+            width: 100px;
+        }
+
         &__button {
-            width: 110px;
+            width: 100px;
             font-size: 14px;
         }
     }

@@ -9,9 +9,10 @@ import "swiper/scss/scrollbar";
 import "../style/reset.scss";
 import partnerStyles from "../style/partner.module.scss";
 import blueLine from "../image/blueLine.svg";
-import akkopd from "../image/akkopd.png";
-import kuivstar from "../image/kuivstar.png"
-;
+import akkopd from "../image/kip-mcgrath-education-centres.svg";
+import kuivstar from "../image/kyivstar-gsm.svg";
+import mts from "../image/mts-logo-2015.svg";
+import ukr from "../image/ukrtelekom.svg";
 
 const Partner = () => {
   const pagination = {
@@ -54,40 +55,65 @@ const Partner = () => {
               }}
             >
               <SwiperSlide>
-              <img src={kuivstar} alt="Kuivstar" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={kuivstar} alt="Kuivstar" />
+                </div>
+
               </SwiperSlide>
               <SwiperSlide>
-              <img src={akkopd} alt="Akkopd" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={mts} alt="Akkopd" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={ukr} alt="Kuivstar" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-              <img src={akkopd} alt="Akkopd" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={akkopd} alt="Akkopd" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-              <img src={kuivstar} alt="Kuivstar" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={kuivstar} alt="Kuivstar" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Akkopd" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={mts} alt="Akkopd" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={ukr} alt="Kuivstar" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Akkopd" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={akkopd} alt="Akkopd" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={kuivstar} alt="Kuivstar" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="Akkopd" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={mts} alt="Akkopd" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={kuivstar} alt="Kuivstar" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={ukr} alt="Kuivstar" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={akkopd} alt="akkopd" />
+                <div className={partnerStyles.partner__image}>
+                  <img src={akkopd} alt="akkopd" />
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>

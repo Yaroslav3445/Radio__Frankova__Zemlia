@@ -22,13 +22,14 @@ const PlayPodcast = () => {
   const currentPodcastIndex = podcastData.findIndex((podcast) => podcast.id === parseInt(id, 10));
   const nextPodcastIndex = (currentPodcastIndex + 1) % podcastData.length;
   const prevPodcastIndex = (currentPodcastIndex - 1 + podcastData.length) % podcastData.length;
-
+  const [isIconPlaying, setIsIconPlaying] = useState(false);
   const nextPodcastId = podcastData[nextPodcastIndex].id;
   const prevPodcastId = podcastData[prevPodcastIndex].id;
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [buffered, setBuffered] = useState(0);
 
+  
   const volumeMove = (event) => {
     const newVolume = parseFloat(event.target.value);
     setVolume(newVolume);
@@ -38,13 +39,16 @@ const PlayPodcast = () => {
     }
   };
 
+
+ 
+
   const handlePause = async () => {
     if (audioRef.current) {
       try {
         if (audioRef.current.paused) {
           await audioRef.current.play();
           setIsPlaying(true);
-        } else {
+        } else if (audioRef.current.play) {
           audioRef.current.pause();
           setIsPlaying(false);
         }
@@ -53,6 +57,10 @@ const PlayPodcast = () => {
       }
     }
   };
+  const icon = () => {
+    setIsPlaying((prevIsPlaying) => !prevIsPlaying);
+    setIsIconPlaying((prevIsIconPlaying) => !prevIsIconPlaying);
+  }
   const updateProgressBar = () => {
     if (audioRef.current && audioRef.current.readyState >= 2) {
       const currentTime = audioRef.current.currentTime;
@@ -60,8 +68,6 @@ const PlayPodcast = () => {
 
       const ranges = audioRef.current.buffered;
       let index = -1;
-
-
 
       const buffered = index !== -1 ? (ranges.end(index) / duration) * 100 : 0;
 
@@ -147,14 +153,14 @@ const PlayPodcast = () => {
                   <img src={musicClick} alt="music" />
                 </button>
               </Link>
-              <button className={PlayPodcastStyles.listen__play} onClick={handlePause} type="button">
-                {isPlaying ? (
+              <button className={PlayPodcastStyles.listen__play} onClick={() => { handlePause(); icon(); }} type="button">
+                {isIconPlaying ? (
                   <FontAwesomeIcon icon={faPause} style={{ color: '#6867ab' }} />
                 ) : (
                   <FontAwesomeIcon icon={faPlay} style={{ color: '#6867ab' }} />
                 )}
               </button>
-              <Link to={`/play-podcast/${nextPodcastId}`} state={{ podcastData: podcastData[nextPodcastIndex] }}>
+              <Link to={`/play-podcast/${nextPodcastId}`} onClick={() => { handlePause(); setIsIconPlaying(false); }} state={{ podcastData: podcastData[nextPodcastIndex] }}>
                 <button className={PlayPodcastStyles.listen__goPodcast} type="button">
                   <img src={musicClick} alt="music" />
                 </button>
