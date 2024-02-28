@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import '../style/reset.scss'
 import commandStyles from '../style/command.module.scss'
-import helix from '../image/helix.png'
+import helix from '../image/helix.webp'
 import yellowLine from '../image/yellowLine.svg'
 import command from '../info/team'
 const Command = ({ itemsToShow }) => {

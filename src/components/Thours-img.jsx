@@ -1,5 +1,5 @@
 import React from 'react';
-import thours from '../image/thorus.png'
+import thours from '../image/thorus.webp'
 const Thours = () => {
     return (
         <>

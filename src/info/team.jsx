@@ -1,7 +1,7 @@
-import team1Image from '../image/command-portret1.png';
-import team2Image from '../image/command-portret2.png';
-import team3Image from '../image/command-portret3.png';
-import team4Image from '../image/command-portret4.png';
+import team1Image from '../image/command-portret1.webp';
+import team2Image from '../image/command-portret2.webp';
+import team3Image from '../image/command-portret3.webp';
+import team4Image from '../image/command-portret4.webp';
 
 
 

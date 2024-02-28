@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import "../style/reset.scss";
 import scheduleStyles from "../style/schedule.module.scss";
-import spheres from "../image/spheres.png";
+import spheres from "../image/spheres.webp";
 import yellowLine from "../image/yellowLine.svg";
-import helix from "../image/helix.png";
+import helix from "../image/helix.webp";
 
 
 const HeadShedule = () => {

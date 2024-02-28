@@ -1,5 +1,5 @@
 import React from 'react';
-import helix from '../image/helix.png'
+import helix from '../image/helix.webp'
 const Helix = () => {
     return (
         <>

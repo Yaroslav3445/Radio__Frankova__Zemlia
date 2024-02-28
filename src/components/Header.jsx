@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 import headerStyles from '../style/header.module.scss'
-import logo from '../image/logo.png'
+import logo from '../image/logo.webp'
 const Header = () => {
     const location = useLocation();
     const [tab, setTab] = useState(false);

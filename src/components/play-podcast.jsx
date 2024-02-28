@@ -8,7 +8,7 @@ import '../style/reset.scss';
 import play from '../image/play.svg';
 import musicClick from '../image/music-prev.svg';
 import volumeBlock from '../image/volume-block.svg';
-import knot from '../image/Knot.png';
+import knot from '../image/Knot.webp';
 
 const PlayPodcast = () => {
   const [isPlaying, setIsPlaying] = useState(false);

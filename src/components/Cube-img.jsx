@@ -1,5 +1,5 @@
 import React from 'react';
-import cube from '../image/cube.png'
+import cube from '../image/cube.webp'
 const Cube = () => {
     return (
         <>

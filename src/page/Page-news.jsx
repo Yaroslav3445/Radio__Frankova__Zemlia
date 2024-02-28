@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import pageNewsStyles from '../style/page-news.module.scss'
 import yellowLine from '../image/yellowLine.svg'
-import newsimage from '../image/newsImage.png'
+// import newsimage from '../image/newsImage.webp'
 import arrow from '../image/arrow.svg'
 import articles from '../info/articles'
 import Pagination from '../components/pagination';
-import knot from '../image/Knot.png'
-import thorus from '../image/thorus.png'
+import knot from '../image/Knot.webp'
+import thorus from '../image/thorus.webp'
 const News = () => {
     const [expandedBlocks, setExpandedBlocks] = useState({});
     const [currentPage, setCurrentPage] = useState(1)

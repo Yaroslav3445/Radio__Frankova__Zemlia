@@ -1,5 +1,5 @@
 import React from 'react';
-import pyramid from '../image/pyramid.png'
+import pyramid from '../image/pyramid.webp'
 const Pyramid = () => {
     return (
         <>

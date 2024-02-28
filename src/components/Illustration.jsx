@@ -1,8 +1,8 @@
 import React from 'react'
-import bus from '../image/bus.png'
-import portret from '../image/portret.png'
-import background from '../image/background.png'
-import flower from '../image/flower.png'
+import bus from '../image/bus.webp'
+import portret from '../image/portret.webp'
+import background from '../image/background.webp'
+import flower from '../image/flower.webp'
 import illustrationStyles from '../style/illustration.module.scss';
 const Illustration = () => {
     return (

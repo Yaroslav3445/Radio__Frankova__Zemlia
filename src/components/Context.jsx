@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from 'react';
-import Data from '../info/data'
 export const Contextfol = createContext()
 
 

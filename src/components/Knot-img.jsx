@@ -1,5 +1,5 @@
 import React from 'react';
-import knot from '../image/Knot.png'
+import knot from '../image/Knot.webp'
 const Knot = () => {
     return (
         <>

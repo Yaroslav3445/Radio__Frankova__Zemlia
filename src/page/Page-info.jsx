@@ -1,8 +1,8 @@
 import React from 'react'
 import pageInfo from '../style/page-info.module.scss'
 import blueLine from '../image/blueLine.svg'
-import person from '../image/person.png'
-import building from '../image/building.png'
+import person from '../image/person.webp'
+import building from '../image/building.webp'
 import '../style/reset.scss'
 
 

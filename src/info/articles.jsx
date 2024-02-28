@@ -1,19 +1,19 @@
 
-import news1Image from '../image/news1.jpg';
-import news2Image from '../image/news2.jpg';
-import news3Image from '../image/news3.jpg';
-import news4Image from '../image/news4.jpeg';
-import news5Image from '../image/news5.jpg';
-import news6Image from '../image/news6.jpg';
-import news7Image from '../image/news7.jpeg';
-import news8Image from '../image/news8.jpeg';
-import news9Image from '../image/news9.jpeg';
-import news10Image from '../image/new10.jpeg';
-import news11Image from '../image/new11.jpeg';
-import news12Image from '../image/news12.jpeg';
-import news13Image from '../image/news13.jpeg';
-import news14Image from '../image/new14.jpeg';
-import news15Image from '../image/new15.jpeg';
+import news1Image from '../image/news1.webp';
+import news2Image from '../image/news2.webp';
+import news3Image from '../image/news3.webp';
+import news4Image from '../image/news4.webp';
+import news5Image from '../image/news5.webp';
+import news6Image from '../image/news6.webp';
+import news7Image from '../image/news7.webp';
+import news8Image from '../image/news8.webp';
+import news9Image from '../image/news9.webp';
+import news10Image from '../image/new10.webp';
+import news11Image from '../image/new11.webp';
+import news12Image from '../image/news12.webp';
+import news13Image from '../image/news13.webp';
+import news14Image from '../image/new14.webp';
+import news15Image from '../image/new15.webp';
 
 
 
